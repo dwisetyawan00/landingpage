@@ -3,135 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klara Skin &amp; Aesthetic — Klinik Estetika Premium</title>
-  <meta name="description" content="Klinik estetika premium yang dirancang seperti studio editorial. Konsultasi privat, perawatan medis berlisensi, dan dokter senior bersertifikat.">
+  <title>Maison Verdé — Aesthetic & Dermatology Clinic</title>
+  <meta name="description" content="Maison Verdé — klinik estetika modern dengan protokol medis berlisensi. Konsultasi privat dengan dokter senior bersertifikat.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
+<body>
 
-  <!-- NAV -->
-  <nav id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-700 px-8 md:px-14 py-7 flex items-center justify-between text-stone-800">
+  <nav id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-700 px-8 md:px-14 py-7 flex items-center justify-between text-ivory">
     <a href="#" class="logo flex items-center gap-3">
-      <span class="logo-mark"></span>
-      <span class="font-display tracking-[0.18em] text-lg uppercase">Klara</span>
+      <span class="logo-mark">M</span>
+      <span class="logo-name">Maison <em>Verdé</em><small>Aesthetic Clinic · MMXVII</small></span>
     </a>
-    <div class="hidden md:flex space-x-10 text-[11px] tracking-[0.22em] uppercase">
+    <div class="hidden md:flex space-x-9 text-[11px] tracking-[0.32em] uppercase">
+      <a href="#filosofi" class="nav-link">Filosofi</a>
       <a href="#perawatan" class="nav-link">Perawatan</a>
       <a href="#dokter" class="nav-link">Dokter</a>
-      <a href="#hasil" class="nav-link">Sebelum &amp; Setelah</a>
-      <a href="#klinik" class="nav-link">Klinik</a>
+      <a href="#hasil" class="nav-link">Hasil</a>
       <a href="#booking" class="nav-link">Booking</a>
     </div>
-    <a href="#booking" class="hidden md:inline-flex nav-cta items-center gap-2 text-[11px] tracking-[0.22em] uppercase">
-      Konsultasi Privat
-      <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1"/></svg>
+    <a href="#booking" class="hidden md:inline-flex nav-cta">
+      Konsultasi
+      <span class="nav-cta-arrow">
+        <svg width="13" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.4"/></svg>
+      </span>
     </a>
-    <button class="md:hidden" aria-label="menu">
-      <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><rect width="22" height="1" fill="currentColor"/><rect y="13" width="14" height="1" fill="currentColor"/></svg>
-    </button>
   </nav>
 
   <!-- HERO -->
-  <header class="hero relative w-full min-h-screen overflow-hidden">
-    <div class="hero-grid relative grid lg:grid-cols-12 min-h-screen">
-
-      <!-- left: text -->
-      <div class="lg:col-span-6 flex flex-col justify-center px-8 md:px-16 lg:px-20 pt-32 lg:pt-24 pb-20 z-10 relative">
-        <div class="flex items-center gap-4 mb-8 reveal-up">
-          <span class="hero-rule"></span>
-          <span class="text-[11px] uppercase tracking-[0.32em] text-stone-500">Aesthetic &amp; Dermatology</span>
-        </div>
-        <h1 class="font-display text-[12vw] md:text-[7.4vw] lg:text-[5.4vw] leading-[0.96] text-stone-900 reveal-up reveal-d-1">
-          Kulit yang dirawat<br>
-          <span class="italic font-normal text-mocha">seperti karya</span>
+  <header class="hero">
+    <div class="hero-grid grid lg:grid-cols-12 min-h-screen">
+      <!-- left emerald panel -->
+      <section class="hero-panel lg:col-span-7 flex flex-col justify-center">
+        <div class="hero-rule reveal-up"><span>Aesthetic & Dermatology · Sejak 2017</span></div>
+        <h1 class="hero-title reveal-up reveal-d-1">
+          Kulit <em>tenang</em>,<br>
+          tubuh <em class="terra">percaya diri</em>,<br>
+          hari Anda<br>
+          ringan kembali.
         </h1>
-        <p class="mt-10 max-w-md text-stone-600 leading-relaxed reveal-up reveal-d-2">
-          Klara Skin &amp; Aesthetic adalah klinik estetika premium yang dirancang seperti studio privat. Setiap protokol perawatan dirumuskan oleh dokter senior bersertifikat — bukan dengan paket promosi yang dipukul rata.
-        </p>
-        <div class="mt-12 flex flex-col sm:flex-row gap-5 reveal-up reveal-d-3">
-          <a href="#booking" class="btn-fill">
-            <span>Reservasi Konsultasi</span>
-            <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg>
+        <p class="hero-sub reveal-up reveal-d-2">Maison Verdé adalah klinik estetika modern dengan protokol medis yang ditandatangani dokter senior. Tidak ada paket promosi yang dipukul rata — setiap rencana dirancang untuk kondisi kulit Anda.</p>
+        <div class="hero-actions reveal-up reveal-d-3">
+          <a href="#booking" class="btn-pill">
+            Reservasi Konsultasi
+            <span class="btn-pill-arrow">
+              <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
           </a>
-          <a href="#perawatan" class="btn-line">
-            Lihat Perawatan
-          </a>
+          <a href="#perawatan" class="btn-pill-ghost">Lihat Protokol</a>
         </div>
 
-        <dl class="hero-meta mt-20 grid grid-cols-3 gap-0 reveal-up reveal-d-4">
+        <dl class="hero-meta reveal-up reveal-d-4">
           <div><dt>Tahun Operasi</dt><dd><span class="counter" data-target="14">0</span><span class="plus">+</span></dd></div>
           <div><dt>Klien Aktif</dt><dd><span class="counter" data-target="6800">0</span><span class="plus">+</span></dd></div>
           <div><dt>Protokol Medis</dt><dd><span class="counter" data-target="42">0</span></dd></div>
         </dl>
-      </div>
+      </section>
 
-      <!-- right: image -->
-      <div class="lg:col-span-6 relative overflow-hidden hero-img-frame">
-        <div class="hero-img-wrap absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
-               alt="Klien klinik" class="hero-img-bg w-full h-full object-cover">
-        </div>
-        <div class="hero-img-grain absolute inset-0 pointer-events-none"></div>
-
-        <!-- floating card -->
-        <div class="hero-floating absolute bottom-10 left-10 right-10 lg:left-12 lg:right-auto lg:max-w-sm">
-          <div class="hero-card">
-            <span class="hero-card-eyebrow">Konsultasi Privat</span>
-            <p class="hero-card-quote">"Dirancang untuk hasil yang terlihat alami pada kamera maupun cermin. Klinik ini diam tapi presisi."</p>
-            <div class="hero-card-by">
-              <span class="hero-card-line"></span>
-              <span>dr. Salma Ardelia · Spesialis Estetika</span>
-            </div>
+      <!-- right portrait -->
+      <aside class="hero-portrait lg:col-span-5">
+        <div class="hero-portrait-inner">
+          <div class="hero-portrait-frame">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Klien klinik">
+            <span class="hero-portrait-tag">Live · 12 booking minggu ini</span>
           </div>
+          <article class="hero-portrait-card">
+            <span class="hero-portrait-card-l">Konsultasi Privat</span>
+            <p>"Klinik ini diam — protokolnya jelas, hasilnya halus, dan saya tidak pernah merasa diburu untuk membeli."</p>
+            <div class="hero-portrait-card-by">
+              <span class="hero-portrait-card-by-dot"></span>
+              <span>Pradnya · Anti-aging · 12 bulan</span>
+            </div>
+          </article>
         </div>
-
-        <!-- caption -->
-        <span class="absolute top-8 right-8 text-[10px] tracking-[0.32em] uppercase text-white/70 hidden md:block">№ 01 / Editorial</span>
-      </div>
+      </aside>
     </div>
 
-    <!-- scroll indicator -->
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center text-stone-500">
-      <span class="text-[10px] tracking-[0.32em] uppercase mb-3">gulir</span>
-      <span class="scroll-line"></span>
+    <!-- curve divider -->
+    <div class="curve-divider reveal-up" style="margin-top:-1px;">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0 60 Q360 0 720 60 T1440 30" />
+      </svg>
     </div>
   </header>
 
   <!-- PHILOSOPHY -->
-  <section id="filosofi" class="philosophy py-32 md:py-40 px-8 md:px-16 lg:px-24">
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 lg:gap-20 items-center">
-      <div class="lg:col-span-7 order-2 lg:order-1 reveal-image">
-        <div class="img-frame relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
-               alt="Treatment room" class="img-target w-full h-[560px] object-cover">
-          <span class="img-frame-tag">Treatment Suite — Lt. 4</span>
+  <section id="filosofi" class="philosophy">
+    <div class="max-w-7xl mx-auto px-8 md:px-14 grid lg:grid-cols-12 gap-16 items-center">
+      <div class="lg:col-span-7 reveal-image">
+        <div class="philo-img">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="Treatment room">
+          <span class="philo-img-tag">Treatment Suite · Lt. 4</span>
         </div>
       </div>
-      <div class="lg:col-span-5 order-1 lg:order-2">
-        <div class="flex items-center gap-3 mb-7 reveal-up">
-          <span class="w-10 h-px bg-mocha"></span>
-          <span class="text-[11px] uppercase tracking-[0.3em] text-mocha">Filosofi Klara</span>
-        </div>
-        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] text-stone-900 mb-8 reveal-up reveal-d-1">
-          Kami merawat<br>
-          <span class="italic">tampilan natural</span>,<br>
-          bukan tampilan klinis.
-        </h2>
-        <p class="text-stone-600 leading-relaxed mb-6 reveal-up reveal-d-2">
-          Setiap klien Klara dimulai dengan konsultasi 45 menit yang dilakukan langsung oleh dokter — bukan oleh konsultan penjualan. Kami tidak menjual perawatan; kami merancang protokol jangka pendek dan jangka panjang yang sesuai usia, kondisi kulit, dan irama hidup Anda.
-        </p>
-        <p class="text-stone-600 leading-relaxed reveal-up reveal-d-3">
-          Standar yang kami pegang: hasil yang terlihat alami, peralatan medis dengan sertifikasi penuh, dan rekam medis yang dapat Anda akses kapan pun.
-        </p>
-        <div class="mt-10 flex items-center gap-4 reveal-up reveal-d-4">
-          <span class="signature-mark">K</span>
+      <div class="lg:col-span-5">
+        <span class="eyebrow reveal-up">Filosofi</span>
+        <h2 class="display-h2 reveal-up reveal-d-1">Hasil yang <em>terlihat alami</em>, bukan terlihat klinis.</h2>
+        <p class="prose-soft mt-7 reveal-up reveal-d-2">Setiap klien Maison Verdé memulai dengan konsultasi 45 menit langsung bersama dokter — bukan dengan konsultan penjualan. Kami merancang protokol jangka pendek dan jangka panjang yang sesuai usia, kondisi kulit, dan irama hidup Anda.</p>
+        <div class="signature-block reveal-up reveal-d-3">
+          <span class="signature-block-mark">M</span>
           <div>
-            <div class="text-stone-900 font-medium">dr. Salma Ardelia</div>
-            <div class="text-[11px] uppercase tracking-[0.22em] text-stone-500">Pendiri · Medical Director</div>
+            <span class="signature-block-name">dr. Salma Ardelia</span>
+            <span class="signature-block-role">Pendiri · Medical Director</span>
           </div>
         </div>
       </div>
@@ -139,296 +115,250 @@
   </section>
 
   <!-- TREATMENTS -->
-  <section id="perawatan" class="treatments py-32 md:py-40 bg-cream-deep">
-    <div class="max-w-7xl mx-auto px-8 md:px-16">
-      <div class="text-center mb-20">
-        <span class="line-decorative mb-7 reveal-up"></span>
-        <span class="text-[11px] uppercase tracking-[0.32em] text-mocha reveal-up reveal-d-1">Layanan</span>
-        <h2 class="font-display text-4xl md:text-5xl mt-4 reveal-up reveal-d-2">Protokol perawatan <em class="italic">unggulan</em>.</h2>
-        <p class="text-stone-600 max-w-xl mx-auto mt-5 reveal-up reveal-d-3">Empat track utama yang dirumuskan untuk berbagai usia dan kondisi kulit, semuanya dieksekusi dengan peralatan medis bersertifikasi.</p>
-      </div>
+  <section id="perawatan" class="treatments">
+    <div class="max-w-6xl mx-auto px-8 md:px-14 text-center mb-16">
+      <span class="eyebrow reveal-up" style="display:inline-flex; justify-content:center;">Protokol Unggulan</span>
+      <h2 class="display-h2 mt-3 reveal-up reveal-d-1">Empat <em>track</em> perawatan utama.</h2>
+      <p class="prose-soft max-w-xl mx-auto mt-6 reveal-up reveal-d-2">Dirancang untuk berbagai usia dan kondisi kulit, semua dieksekusi dengan peralatan medis bersertifikasi.</p>
+    </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-0 treatment-grid">
-        <!-- 1 -->
-        <article class="t-card reveal-up reveal-d-1">
-          <span class="t-num">01</span>
-          <span class="t-icon">
-            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="16" cy="16" r="13"/><path d="M16 8a8 8 0 0 1 8 8M10 22a8 8 0 0 1 0-12"/></svg>
-          </span>
-          <h3 class="t-title">Skin Rejuvenation</h3>
-          <p class="t-desc">Protokol pemulihan tekstur dan tonus kulit — termasuk laser fractional, RF microneedling, dan biostimulator.</p>
-          <span class="t-meta">Mulai 3 jt · 60 menit</span>
-        </article>
-        <!-- 2 -->
-        <article class="t-card reveal-up reveal-d-2">
-          <span class="t-num">02</span>
-          <span class="t-icon">
-            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M16 4v24M4 16h24M8 8l16 16M8 24l16-16"/></svg>
-          </span>
-          <h3 class="t-title">Acne &amp; Pigmentation</h3>
-          <p class="t-desc">Penanganan jerawat aktif, bekas jerawat, dan hiperpigmentasi dengan kombinasi medikasi dan tindakan.</p>
-          <span class="t-meta">Mulai 1.4 jt · 45 menit</span>
-        </article>
-        <!-- 3 -->
-        <article class="t-card reveal-up reveal-d-3">
-          <span class="t-num">03</span>
-          <span class="t-icon">
-            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M16 3c4 5 7 9 7 14a7 7 0 1 1-14 0c0-5 3-9 7-14z"/></svg>
-          </span>
-          <h3 class="t-title">Anti-Aging Refinement</h3>
-          <p class="t-desc">Penanganan halus untuk garis ekspresi dan volume wajah dengan injectable, ulthera, dan thread lifting.</p>
-          <span class="t-meta">Mulai 4.8 jt · 75 menit</span>
-        </article>
-        <!-- 4 -->
-        <article class="t-card reveal-up reveal-d-4">
-          <span class="t-num">04</span>
-          <span class="t-icon">
-            <svg width="36" height="36" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="16" cy="16" r="6"/><circle cx="16" cy="16" r="11" stroke-dasharray="2 4"/></svg>
-          </span>
-          <h3 class="t-title">Bridal Glow Program</h3>
-          <p class="t-desc">Program 90 hari menjelang pernikahan: konsultasi awal, treatment bertahap, dan rencana home-care.</p>
-          <span class="t-meta">Paket privat · 6 sesi</span>
-        </article>
-      </div>
-
-      <div class="text-center mt-16 reveal-up">
-        <a href="#booking" class="link-quiet">Lihat seluruh protokol →</a>
-      </div>
+    <div class="treat-grid px-8 md:px-14">
+      <article class="treat-card reveal-up reveal-d-1">
+        <span class="treat-icon-wrap"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="16" cy="16" r="13"/><path d="M16 8a8 8 0 0 1 8 8M10 22a8 8 0 0 1 0-12"/></svg></span>
+        <div>
+          <span class="treat-no">№ 01</span>
+          <h3>Skin Rejuvenation</h3>
+          <p>Pemulihan tekstur dan tonus kulit dengan laser fractional, RF microneedling, dan biostimulator.</p>
+          <span class="treat-meta">Mulai 3 jt · 60 menit</span>
+        </div>
+      </article>
+      <article class="treat-card reveal-up reveal-d-2">
+        <span class="treat-icon-wrap alt"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 4v24M4 16h24M8 8l16 16M8 24l16-16"/></svg></span>
+        <div>
+          <span class="treat-no">№ 02</span>
+          <h3>Acne &amp; Pigmentation</h3>
+          <p>Penanganan jerawat aktif, bekas jerawat, dan hiperpigmentasi — kombinasi medikasi dan tindakan.</p>
+          <span class="treat-meta">Mulai 1.4 jt · 45 menit</span>
+        </div>
+      </article>
+      <article class="treat-card reveal-up reveal-d-3">
+        <span class="treat-icon-wrap"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M16 3c4 5 7 9 7 14a7 7 0 1 1-14 0c0-5 3-9 7-14z"/></svg></span>
+        <div>
+          <span class="treat-no">№ 03</span>
+          <h3>Anti-Aging Refinement</h3>
+          <p>Penanganan halus untuk garis ekspresi dan volume wajah dengan injectable, ulthera, thread lift.</p>
+          <span class="treat-meta">Mulai 4.8 jt · 75 menit</span>
+        </div>
+      </article>
+      <article class="treat-card reveal-up reveal-d-4">
+        <span class="treat-icon-wrap alt"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="16" cy="16" r="6"/><circle cx="16" cy="16" r="11" stroke-dasharray="2 4"/></svg></span>
+        <div>
+          <span class="treat-no">№ 04</span>
+          <h3>Bridal Glow Program</h3>
+          <p>Program 90 hari menjelang pernikahan: konsultasi awal, treatment bertahap, rencana home-care.</p>
+          <span class="treat-meta">Paket privat · 6 sesi</span>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- DOCTOR -->
-  <section id="dokter" class="doctor py-32 md:py-40 px-8 md:px-16">
-    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+  <section id="dokter" class="doctor">
+    <div class="max-w-6xl mx-auto px-8 md:px-14 grid lg:grid-cols-12 gap-16 items-center">
       <div class="lg:col-span-5 reveal-image">
-        <div class="img-frame relative overflow-hidden">
-          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-               alt="Dokter" class="img-target w-full h-[640px] object-cover">
-          <span class="img-frame-tag">Medical Director</span>
+        <div class="doctor-img">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Dokter">
+          <span class="doctor-img-tag">Medical Director</span>
         </div>
       </div>
-      <div class="lg:col-span-7 lg:pl-10">
-        <div class="flex items-center gap-3 mb-7 reveal-up">
-          <span class="w-10 h-px bg-mocha"></span>
-          <span class="text-[11px] uppercase tracking-[0.3em] text-mocha">Tim Medis</span>
-        </div>
-        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] text-stone-900 mb-7 reveal-up reveal-d-1">
-          Setiap protokol ditandatangani <em class="italic">oleh dokter senior</em>.
-        </h2>
-        <p class="text-stone-600 leading-relaxed mb-10 reveal-up reveal-d-2">
-          Empat dokter spesialis dengan rata-rata 11 tahun praktik di bidang dermatologi estetika, didukung tim perawat bersertifikat. Tidak ada perawatan yang dijalankan tanpa pengawasan dokter.
-        </p>
+      <div class="lg:col-span-7">
+        <span class="eyebrow light reveal-up">Tim Medis</span>
+        <h2 class="display-h2 light reveal-up reveal-d-1">Setiap protokol <em>ditandatangani</em> dokter senior.</h2>
+        <p class="prose-soft light mt-7 max-w-xl reveal-up reveal-d-2">Empat dokter spesialis dengan rata-rata 11 tahun praktik di bidang dermatologi estetika, didukung tim perawat bersertifikat. Tidak ada perawatan yang berjalan tanpa pengawasan dokter.</p>
 
-        <ul class="credentials reveal-up reveal-d-3">
-          <li><span class="cred-num">i.</span><span>Spesialis Kulit &amp; Kelamin · Universitas Indonesia</span></li>
-          <li><span class="cred-num">ii.</span><span>Anggota PERDOSKI &amp; PERDAVI</span></li>
-          <li><span class="cred-num">iii.</span><span>Master Trainer · Allergan &amp; Galderma Aesthetics</span></li>
-          <li><span class="cred-num">iv.</span><span>Continuing Medical Education · Seoul National University</span></li>
+        <ul class="cred-list reveal-up reveal-d-3">
+          <li><span class="cred-num">01</span><div><h4>Spesialis Kulit &amp; Kelamin</h4><p>Universitas Indonesia · Anggota PERDOSKI &amp; PERDAVI</p></div></li>
+          <li><span class="cred-num">02</span><div><h4>Master Trainer</h4><p>Allergan &amp; Galderma Aesthetics · Asia Pacific</p></div></li>
+          <li><span class="cred-num">03</span><div><h4>Continuing Medical Education</h4><p>Seoul National University · 2019 — sekarang</p></div></li>
+          <li><span class="cred-num">04</span><div><h4>Speaker &amp; Panelist</h4><p>IMCAS Asia · APMS Aesthetic Conference</p></div></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- BEFORE / AFTER -->
-  <section id="hasil" class="ba py-32 md:py-40 bg-stone-900 text-cream">
-    <div class="max-w-7xl mx-auto px-8 md:px-16">
-      <div class="grid lg:grid-cols-12 gap-12 items-end mb-20">
+  <section id="hasil" class="ba">
+    <div class="max-w-7xl mx-auto px-8 md:px-14">
+      <div class="grid lg:grid-cols-12 gap-12 items-end mb-16">
         <div class="lg:col-span-7">
-          <span class="text-[11px] uppercase tracking-[0.32em] text-mocha-l reveal-up">Sebelum &amp; Setelah</span>
-          <h2 class="font-display text-4xl md:text-5xl leading-[1.05] mt-5 reveal-up reveal-d-1">
-            Hasil yang dapat <em class="italic">dipertanggungjawabkan</em>.
-          </h2>
+          <span class="eyebrow reveal-up">Sebelum &amp; Setelah</span>
+          <h2 class="display-h2 reveal-up reveal-d-1">Hasil yang dapat <em>dipertanggung-jawabkan</em>.</h2>
         </div>
-        <p class="lg:col-span-5 text-stone-400 leading-relaxed reveal-up reveal-d-2">Setiap dokumentasi diambil dengan kondisi pencahayaan dan rentang waktu yang sama. Tidak ada filter, tidak ada retouching.</p>
+        <p class="lg:col-span-5 prose-soft reveal-up reveal-d-2">Dokumentasi diambil dengan kondisi pencahayaan dan rentang waktu yang sama. Tidak ada filter, tidak ada retouching.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="ba-grid">
         <article class="ba-card reveal-up reveal-d-1">
-          <div class="ba-img-wrap">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag">Sebelum</span>
+          <div class="ba-pair">
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1614436163996-25cee5f54290?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Sebelum"><span class="ba-img-tag">Sebelum</span></div>
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Setelah"><span class="ba-img-tag dark">90 hari</span></div>
           </div>
-          <div class="ba-img-wrap mt-3">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag dark">Setelah · 90 hari</span>
-          </div>
-          <h3 class="ba-title">Skin Rejuvenation</h3>
-          <p class="ba-meta">Klien · 34 tahun · 6 sesi</p>
+          <h3>Skin Rejuvenation</h3>
+          <span class="ba-card-meta">Klien · 34 tahun · 6 sesi</span>
         </article>
-
         <article class="ba-card reveal-up reveal-d-2">
-          <div class="ba-img-wrap">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1505672678657-cc7037095e60?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag">Sebelum</span>
+          <div class="ba-pair">
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1505672678657-cc7037095e60?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Sebelum"><span class="ba-img-tag">Sebelum</span></div>
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Setelah"><span class="ba-img-tag dark">60 hari</span></div>
           </div>
-          <div class="ba-img-wrap mt-3">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag dark">Setelah · 60 hari</span>
-          </div>
-          <h3 class="ba-title">Acne Refinement</h3>
-          <p class="ba-meta">Klien · 26 tahun · 4 sesi</p>
+          <h3>Acne Refinement</h3>
+          <span class="ba-card-meta">Klien · 26 tahun · 4 sesi</span>
         </article>
-
         <article class="ba-card reveal-up reveal-d-3">
-          <div class="ba-img-wrap">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag">Sebelum</span>
+          <div class="ba-pair">
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Sebelum"><span class="ba-img-tag">Sebelum</span></div>
+            <div class="ba-img"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Setelah"><span class="ba-img-tag dark">120 hari</span></div>
           </div>
-          <div class="ba-img-wrap mt-3">
-            <div class="ba-img" style="background-image:url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-            <span class="ba-tag dark">Setelah · 120 hari</span>
-          </div>
-          <h3 class="ba-title">Anti-Aging</h3>
-          <p class="ba-meta">Klien · 47 tahun · 3 sesi</p>
+          <h3>Anti-Aging</h3>
+          <span class="ba-card-meta">Klien · 47 tahun · 3 sesi</span>
         </article>
       </div>
     </div>
   </section>
 
   <!-- PARALLAX QUOTE -->
-  <section class="quote-banner relative overflow-hidden h-[80vh] flex items-center justify-center">
-    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-         alt="" class="parallax-bg" data-speed="0.18">
-    <div class="absolute inset-0 bg-stone-900/55"></div>
-    <blockquote class="relative z-10 text-center px-8 max-w-4xl reveal-up">
+  <section class="quote-banner">
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="" class="parallax-bg" data-speed="0.18">
+    <div class="quote-banner-overlay"></div>
+    <blockquote class="reveal-up">
       <span class="quote-mark">&#10077;</span>
-      <p class="font-display text-3xl md:text-5xl leading-tight text-cream italic">Hasil yang baik adalah hasil yang tidak terlihat dikerjakan — hanya kulit yang lebih sehat.</p>
-      <footer class="mt-7 text-[11px] uppercase tracking-[0.32em] text-cream/70">— dr. Salma Ardelia, Medical Director</footer>
+      <p class="quote-text">Hasil yang baik adalah hasil yang tidak terlihat dikerjakan — hanya kulit yang lebih sehat.</p>
+      <footer class="quote-by">— dr. Salma Ardelia · Medical Director</footer>
     </blockquote>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section id="testi" class="tests py-32 md:py-40 px-8 md:px-16">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-20">
-        <span class="text-[11px] uppercase tracking-[0.32em] text-mocha reveal-up">Suara Klien</span>
-        <h2 class="font-display text-4xl md:text-5xl mt-4 reveal-up reveal-d-1">Klien yang <em class="italic">tetap bersama kami</em>.</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-10">
-        <figure class="test-card reveal-up reveal-d-1">
-          <div class="test-stars">★ ★ ★ ★ ★</div>
-          <blockquote>"Dokter Klara benar-benar mendengarkan. Saya tidak pernah merasa diburu untuk membeli paket. Hasil bridal program saya tampak alami sampai hari pernikahan."</blockquote>
-          <figcaption>
-            <span class="test-name">Pradnya Wirawan</span>
-            <span class="test-role">Bridal Glow · 2024</span>
-          </figcaption>
-        </figure>
-        <figure class="test-card reveal-up reveal-d-2">
-          <div class="test-stars">★ ★ ★ ★ ★</div>
-          <blockquote>"Saya pindah dari beberapa klinik sebelum menetap di Klara. Yang membedakan: protokol mereka jangka panjang, bukan satu sesi yang dijual berlebihan."</blockquote>
-          <figcaption>
-            <span class="test-name">Aisha Ramadhani</span>
-            <span class="test-role">Acne Refinement · 4 sesi</span>
-          </figcaption>
-        </figure>
-        <figure class="test-card reveal-up reveal-d-3">
-          <div class="test-stars">★ ★ ★ ★ ★</div>
-          <blockquote>"Sebagai eksekutif yang sering tampil di kamera, saya butuh hasil yang halus dan terkontrol. Klara memberi saya itu — tanpa drama klinis."</blockquote>
-          <figcaption>
-            <span class="test-name">Nathania Suryadi</span>
-            <span class="test-role">Anti-Aging · 18 bln</span>
-          </figcaption>
-        </figure>
-      </div>
+  <section class="tests">
+    <div class="max-w-6xl mx-auto px-8 md:px-14 text-center mb-16">
+      <span class="eyebrow reveal-up" style="display:inline-flex; justify-content:center;">Suara Klien</span>
+      <h2 class="display-h2 mt-3 reveal-up reveal-d-1">Klien yang <em>tetap bersama</em> kami.</h2>
+    </div>
+    <div class="test-grid max-w-6xl mx-auto px-8 md:px-14">
+      <figure class="test-card reveal-up reveal-d-1">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <blockquote>"Dokter Maison Verdé benar-benar mendengarkan. Saya tidak pernah merasa diburu — hasil bridal program saya tampak alami sampai hari pernikahan."</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-mark">P</span>
+          <div><span class="test-name">Pradnya Wirawan</span><span class="test-role">Bridal Glow · 2024</span></div>
+        </figcaption>
+      </figure>
+      <figure class="test-card reveal-up reveal-d-2">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <blockquote>"Saya pindah dari beberapa klinik sebelum menetap di sini. Yang membedakan: protokol mereka jangka panjang, bukan satu sesi yang dijual berlebihan."</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-mark">A</span>
+          <div><span class="test-name">Aisha Ramadhani</span><span class="test-role">Acne Refinement · 4 sesi</span></div>
+        </figcaption>
+      </figure>
+      <figure class="test-card reveal-up reveal-d-3">
+        <div class="test-stars">★ ★ ★ ★ ★</div>
+        <blockquote>"Sebagai eksekutif yang sering tampil di kamera, saya butuh hasil yang halus dan terkontrol. Maison Verdé memberi saya itu — tanpa drama klinis."</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-mark">N</span>
+          <div><span class="test-name">Nathania Suryadi</span><span class="test-role">Anti-Aging · 18 bln</span></div>
+        </figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="faq py-32 md:py-40 bg-cream-deep">
-    <div class="max-w-3xl mx-auto px-8">
-      <div class="text-center mb-16">
-        <span class="text-[11px] uppercase tracking-[0.32em] text-mocha reveal-up">Pertanyaan</span>
-        <h2 class="font-display text-4xl md:text-5xl mt-4 reveal-up reveal-d-1">Yang sering ditanyakan klien <em class="italic">baru</em>.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="faq-item reveal-up" open>
-          <summary><span class="q-num">Q.01</span><span class="q-text">Bagaimana proses konsultasi awal?</span><span class="q-plus">+</span></summary>
-          <div class="q-body">Konsultasi 45 menit dengan dokter spesialis kulit, mencakup analisis kondisi kulit dengan alat dermatoskop, riwayat medis, serta diskusi tujuan estetika. Anda akan mendapat ringkasan tertulis berisi opsi protokol.</div>
-        </details>
-        <details class="faq-item reveal-up reveal-d-1">
-          <summary><span class="q-num">Q.02</span><span class="q-text">Apakah hasil treatment terlihat alami?</span><span class="q-plus">+</span></summary>
-          <div class="q-body">Filosofi kami adalah "natural enhancement" — hasil yang halus, bertahap, dan menjaga ekspresi natural. Kami menolak permintaan yang kami nilai akan mengubah identitas wajah secara berlebihan.</div>
-        </details>
-        <details class="faq-item reveal-up reveal-d-2">
-          <summary><span class="q-num">Q.03</span><span class="q-text">Apakah aman untuk kulit sensitif?</span><span class="q-plus">+</span></summary>
-          <div class="q-body">Setiap protokol dimulai dengan patch test dan analisis kulit. Untuk klien dengan rosacea, eczema, atau kondisi sensitif lain, dokter merancang protokol bertahap dengan parameter yang lebih konservatif.</div>
-        </details>
-        <details class="faq-item reveal-up reveal-d-3">
-          <summary><span class="q-num">Q.04</span><span class="q-text">Berapa lama efek treatment bertahan?</span><span class="q-plus">+</span></summary>
-          <div class="q-body">Tergantung jenis tindakan: laser rejuvenation 6–12 bulan, injectable 6–9 bulan, thread lift 12–18 bulan. Kami merekomendasikan jadwal pemeliharaan yang akan kami catatkan di rekam medis pribadi Anda.</div>
-        </details>
-        <details class="faq-item reveal-up reveal-d-4">
-          <summary><span class="q-num">Q.05</span><span class="q-text">Apakah tersedia layanan pria?</span><span class="q-plus">+</span></summary>
-          <div class="q-body">Ya. Sekitar 28% klien aktif kami adalah pria, dengan track yang dirancang spesifik untuk kebutuhan tekstur, hair restoration, dan anti-aging dengan estetika terukur.</div>
-        </details>
-      </div>
+  <section id="faq" class="faq">
+    <div class="max-w-3xl mx-auto px-8 md:px-14 text-center mb-12">
+      <span class="eyebrow reveal-up" style="display:inline-flex; justify-content:center;">Pertanyaan</span>
+      <h2 class="display-h2 mt-3 reveal-up reveal-d-1">Yang sering ditanyakan klien <em>baru</em>.</h2>
+    </div>
+    <div class="faq-list px-8 md:px-14">
+      <details class="faq-item reveal-up" open>
+        <summary><span class="faq-q-num">i.</span><span class="faq-q-text">Bagaimana proses konsultasi awal?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Konsultasi 45 menit dengan dokter spesialis, mencakup analisis kondisi kulit dengan dermatoskop, riwayat medis, dan diskusi tujuan estetika. Anda akan menerima ringkasan tertulis berisi opsi protokol.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-1">
+        <summary><span class="faq-q-num">ii.</span><span class="faq-q-text">Apakah hasil treatment terlihat alami?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Filosofi kami adalah natural enhancement — hasil halus dan bertahap yang menjaga ekspresi natural. Kami menolak permintaan yang dinilai akan mengubah identitas wajah secara berlebihan.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-2">
+        <summary><span class="faq-q-num">iii.</span><span class="faq-q-text">Apakah aman untuk kulit sensitif?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Setiap protokol dimulai dengan patch test dan analisis kulit. Untuk klien dengan rosacea, eczema, atau kondisi sensitif, dokter merancang protokol bertahap dengan parameter yang lebih konservatif.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-3">
+        <summary><span class="faq-q-num">iv.</span><span class="faq-q-text">Berapa lama efek treatment bertahan?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Tergantung jenis tindakan: laser rejuvenation 6–12 bulan, injectable 6–9 bulan, thread lift 12–18 bulan. Kami merekomendasikan jadwal pemeliharaan yang akan kami catatkan di rekam medis pribadi Anda.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-4">
+        <summary><span class="faq-q-num">v.</span><span class="faq-q-text">Apakah tersedia layanan pria?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Ya — sekitar 28% klien aktif kami pria, dengan track yang dirancang spesifik untuk kebutuhan tekstur, hair restoration, dan anti-aging dengan estetika terukur.</div>
+      </details>
     </div>
   </section>
 
-  <!-- CTA / KLINIK INFO -->
-  <section id="booking" class="cta relative py-32 md:py-44 px-8 md:px-16 overflow-hidden">
-    <div class="cta-grid relative max-w-7xl mx-auto grid lg:grid-cols-12 gap-14 items-center z-10">
-      <div class="lg:col-span-7">
-        <span class="text-[11px] uppercase tracking-[0.32em] text-mocha reveal-up">Booking Konsultasi</span>
-        <h2 class="font-display text-4xl md:text-6xl leading-[1.02] text-stone-900 mt-5 mb-7 reveal-up reveal-d-1">
-          Reservasi <em class="italic">slot konsultasi privat</em> Anda.
-        </h2>
-        <p class="text-stone-600 max-w-md leading-relaxed mb-10 reveal-up reveal-d-2">
-          Konsultasi 45 menit langsung dengan dokter spesialis. Slot terbatas per minggu untuk menjaga kualitas sesi.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-5 reveal-up reveal-d-3">
-          <a href="https://wa.me/6281234567890?text=Halo%20Klara%2C%20saya%20ingin%20reservasi%20konsultasi" class="btn-fill">
-            <span>Reservasi via WhatsApp</span>
-            <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg>
-          </a>
-          <a href="tel:+622150991882" class="btn-line">+62 21 5099 1882</a>
+  <!-- CTA -->
+  <section id="booking" class="cta">
+    <div class="max-w-6xl mx-auto px-8 md:px-14">
+      <div class="cta-card grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <span class="eyebrow light reveal-up" style="color:var(--blush-soft);">Booking Konsultasi</span>
+          <h2 class="display-h2 light reveal-up reveal-d-1" style="color:var(--ivory);">Reservasi <em style="color:var(--blush);">slot konsultasi</em> privat Anda.</h2>
+          <p class="prose-soft light mt-7 max-w-md reveal-up reveal-d-2" style="color:rgba(245,239,227,0.85);">Konsultasi 45 menit langsung dengan dokter spesialis. Slot terbatas per minggu untuk menjaga kualitas sesi.</p>
+          <div class="hero-actions mt-9 reveal-up reveal-d-3">
+            <a href="https://wa.me/6281234567890?text=Halo%20Maison%20Verde%2C%20saya%20ingin%20reservasi%20konsultasi" class="btn-pill-dark">
+              Reservasi via WhatsApp
+              <span class="btn-pill-arrow">
+                <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+            </a>
+            <a href="tel:+622150991882" class="btn-pill-ghost">+62 21 5099 1882</a>
+          </div>
         </div>
+        <aside class="lg:col-span-5 reveal-up reveal-d-4">
+          <div class="cta-info-card">
+            <h4>Maison Verdé Clinic</h4>
+            <dl>
+              <div class="cta-info-row"><dt>Alamat</dt><dd>Senopati 88, Lt. 4 — Jakarta</dd></div>
+              <div class="cta-info-row"><dt>Jam Buka</dt><dd>Sen — Sab · 10.00 — 20.00</dd></div>
+              <div class="cta-info-row"><dt>Sesi/minggu</dt><dd>Maks. 38 slot</dd></div>
+              <div class="cta-info-row"><dt>Reservasi</dt><dd>D — 7 hari</dd></div>
+            </dl>
+          </div>
+        </aside>
       </div>
-
-      <aside class="lg:col-span-5 cta-info reveal-up reveal-d-2" id="klinik">
-        <span class="cta-info-tag">Klinik Klara · Jakarta</span>
-        <dl class="cta-info-list">
-          <div><dt>Alamat</dt><dd>Wisma Klara, Lt. 4 · Senopati 27</dd></div>
-          <div><dt>Operasional</dt><dd>Senin – Sabtu · 09.00 – 20.00</dd></div>
-          <div><dt>Booking lead time</dt><dd>2 – 5 hari kerja</dd></div>
-          <div><dt>Email</dt><dd>concierge@klara.id</dd></div>
-        </dl>
-      </aside>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="foot bg-stone-900 text-cream/85 pt-24 pb-12 px-8 md:px-16">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-16 mb-20">
+  <footer class="foot">
+    <div class="max-w-7xl mx-auto px-8 md:px-14 grid md:grid-cols-12 gap-12 mb-12">
       <div class="md:col-span-5">
         <a href="#" class="logo flex items-center gap-3 mb-7">
-          <span class="logo-mark light"></span>
-          <span class="font-display tracking-[0.18em] text-lg uppercase text-cream">Klara</span>
+          <span class="logo-mark">M</span>
+          <span class="logo-name" style="color:var(--ivory);">Maison <em>Verdé</em><small style="color:var(--blush);">Aesthetic Clinic · MMXVII</small></span>
         </a>
-        <p class="text-cream/55 leading-relaxed max-w-sm text-sm mb-7">Newsletter privat — kurasi artikel kesehatan kulit, protokol musim, dan promo terbatas anggota.</p>
+        <p style="color:rgba(245,239,227,0.7); font-size:14px; max-width:28rem; margin:0 0 24px;">Newsletter privat — refleksi tim dokter, protokol baru, dan slot konsultasi prioritas untuk member.</p>
         <form class="news-form" data-newsletter>
           <input type="email" required placeholder="Alamat email Anda">
-          <button type="submit"><span>Berlangganan</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1"/></svg></button>
+          <button type="submit" aria-label="Subscribe">
+            <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.6"/></svg>
+          </button>
         </form>
       </div>
       <div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
-        <div>
-          <h4 class="foot-h">Klinik</h4>
-          <ul class="foot-l"><li><a href="#filosofi">Filosofi</a></li><li><a href="#dokter">Tim Dokter</a></li><li><a href="#perawatan">Perawatan</a></li><li><a href="#hasil">Hasil Klien</a></li></ul>
-        </div>
-        <div>
-          <h4 class="foot-h">Kontak</h4>
-          <ul class="foot-l"><li><a href="https://wa.me/6281234567890">WhatsApp</a></li><li><a href="mailto:concierge@klara.id">Email</a></li><li><a href="tel:+622150991882">Telepon</a></li></ul>
-        </div>
-        <div>
-          <h4 class="foot-h">Sosial</h4>
-          <ul class="foot-l"><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li><li><a href="#">TikTok</a></li></ul>
-        </div>
+        <div><h4 class="foot-h">Klinik</h4><ul class="foot-l"><li><a href="#filosofi">Filosofi</a></li><li><a href="#perawatan">Protokol</a></li><li><a href="#dokter">Tim Dokter</a></li></ul></div>
+        <div><h4 class="foot-h">Program</h4><ul class="foot-l"><li><a href="#hasil">Hasil</a></li><li><a href="#booking">Booking</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+        <div><h4 class="foot-h">Kontak</h4><ul class="foot-l"><li><a href="https://wa.me/6281234567890">WhatsApp</a></li><li><a href="mailto:concierge@maisonverde.id">Email</a></li><li><a href="tel:+622150991882">Telepon</a></li></ul></div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] tracking-[0.18em] uppercase text-cream/40">
-      <span>© <span data-year>2026</span> Klara Skin &amp; Aesthetic</span>
-      <span>Klinik berlisensi · Dokter bersertifikat</span>
+    <div class="max-w-7xl mx-auto px-8 md:px-14 pt-8 border-t border-ivory/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] tracking-[0.32em] uppercase" style="color:rgba(245,239,227,0.5);">
+      <span>© <span data-year>2026</span> Maison Verdé Clinic</span>
+      <span>Senopati 88 · Jakarta · MMXVII</span>
     </div>
   </footer>
 

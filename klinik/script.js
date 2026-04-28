@@ -1,4 +1,4 @@
-/* Klara Skin & Aesthetic — interactions */
+/* Maison Verdé — interactions */
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Nav scroll state
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = form.querySelector('input[type="email"]').value;
-      const msg = encodeURIComponent(`Halo Klara, tolong daftarkan saya ke newsletter privat. Email: ${email}`);
+      const msg = encodeURIComponent(`Halo Maison Verde, tolong daftarkan saya ke newsletter privat. Email: ${email}`);
       window.open(`https://wa.me/6281234567890?text=${msg}`, '_blank', 'noopener');
       form.reset();
     });
