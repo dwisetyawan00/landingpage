@@ -1,134 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Premium Landing Page Collection</title>
-  <meta name="description" content="Koleksi 15 landing page premium untuk berbagai industri bisnis.">
-  <link rel="stylesheet" href="assets/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Niche Landing Pages — Sample Preview</title>
+  <meta name="description" content="Koleksi landing page premium dengan visual identity yang berbeda untuk setiap niche bisnis.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --paper:#F5F2EB;
+      --bone:#FBF7EE;
+      --ink:#1A1A17;
+      --char:#2A2A26;
+      --accent:#7A5A45;
+      --rule:rgba(26,26,23,0.16);
+      --easing: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth; background:var(--paper); color:var(--ink); -webkit-font-smoothing:antialiased;}
+    body{font-family:'Inter', system-ui, sans-serif; font-weight:300; font-size:16px; line-height:1.65;}
+    a{color:inherit; text-decoration:none;}
+    .font-display{font-family:'Cormorant Garamond', Georgia, serif; font-weight:400;}
+    ::selection{background:var(--accent); color:var(--bone);}
+
+    /* hero */
+    .lead{padding:120px 0 80px; max-width:1180px; margin:0 auto;}
+    .lead-eyebrow{font-size:11px; letter-spacing:0.42em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:14px; margin-bottom:24px;}
+    .lead-eyebrow span.line{flex:0 0 60px; height:1px; background:currentColor;}
+    .lead-h1{font-family:'Cormorant Garamond', Georgia, serif; font-weight:400; font-size:clamp(40px, 6vw, 80px); line-height:1.02; letter-spacing:-0.005em; max-width:18ch;}
+    .lead-h1 em{font-style:italic; color:var(--accent);}
+    .lead-sub{margin-top:30px; max-width:48ch; color:#4d4d47; font-size:16px;}
+
+    .badge{display:inline-flex; align-items:center; gap:8px; margin-top:34px; padding:7px 14px; border:1px solid var(--rule); font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--char);}
+    .badge .dot{width:7px; height:7px; background:var(--accent); border-radius:50%;}
+
+    /* niche grid */
+    .grid-wrap{padding:40px 0 120px; max-width:1180px; margin:0 auto;}
+    .grid{display:grid; grid-template-columns:repeat(2, 1fr); gap:0; border-top:1px solid var(--rule); border-left:1px solid var(--rule);}
+    .niche{display:flex; flex-direction:column; padding:42px 38px; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule); background:var(--paper); position:relative; transition:background .55s var(--easing), transform .55s var(--easing);}
+    .niche:hover{background:var(--bone); transform:translateY(-3px);}
+    .niche.coming{opacity:.55; pointer-events:none;}
+    .niche-no{position:absolute; top:32px; right:38px; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:18px; color:var(--accent);}
+    .niche-name{font-family:'Cormorant Garamond', serif; font-weight:400; font-size:34px; line-height:1.05; margin:0 0 4px; color:var(--ink);}
+    .niche-name em{font-style:italic; color:var(--accent);}
+    .niche-tag{font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:#7a7a73; margin:0 0 18px;}
+    .niche-desc{color:#4d4d47; margin:0 0 24px; max-width:46ch; font-size:14px; line-height:1.65;}
+    .palette{display:flex; gap:6px; margin-bottom:20px;}
+    .swatch{width:18px; height:18px; border:1px solid rgba(0,0,0,0.08); display:inline-block;}
+    .niche-foot{margin-top:auto; display:flex; align-items:center; justify-content:space-between; padding-top:20px; border-top:1px solid var(--rule);}
+    .niche-cta{font-size:11px; letter-spacing:0.32em; text-transform:uppercase; color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:4px; transition:opacity .4s;}
+    .niche-cta:hover{opacity:.65;}
+    .niche-pill{font-size:10px; letter-spacing:0.28em; text-transform:uppercase; padding:5px 10px; background:rgba(122,90,69,0.08); color:var(--accent);}
+
+    .footer{padding:30px 0 60px; max-width:1180px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:20px; font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:#7a7a73; border-top:1px solid var(--rule); padding-top:30px;}
+
+    @media (max-width: 720px){
+      .lead, .grid-wrap, .footer{padding-left:24px; padding-right:24px;}
+      .grid{grid-template-columns:1fr;}
+      .niche{padding:30px 24px;}
+      .footer{flex-direction:column; align-items:flex-start;}
+    }
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="site-shell nav">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">LP</span>
-        <span>Premium Landing Pages</span>
-      </a>
-      <nav class="nav-links" aria-label="Navigasi katalog">
-        <a href="#collection">Collection</a>
-        <a href="pages/supplier-distributor.html">Sample</a>
-      </nav>
-      <a class="button" href="pages/supplier-distributor.html">Buka Halaman</a>
-    </div>
-  </header>
   <main>
-    <section class="index-hero">
-      <div class="site-shell">
-        <span class="eyebrow">15 Premium Business Landing Pages</span>
-        <h1>Landing page profesional untuk bisnis yang membutuhkan trust, inquiry, dan konversi.</h1>
-        <p class="hero-lead">Setiap halaman dibuat dengan layout corporate premium, whitespace bersih, typography elegan, struktur high-conversion, dan CTA WhatsApp.</p>
+    <header class="lead px-6">
+      <div class="lead-eyebrow"><span class="line"></span><span>Sample Preview · 5 dari 15 niche</span></div>
+      <h1 class="lead-h1">Lima identitas visual <em>yang berbeda</em>, dirumuskan untuk lima jenis pembeli.</h1>
+      <p class="lead-sub">Setiap landing page dibangun dengan palet, tipografi, layout, animasi, dan bahasa yang spesifik untuk niche-nya — bukan template yang dipukul rata. Klik niche di bawah untuk meninjau direksi visualnya.</p>
+      <span class="badge"><span class="dot"></span> Tailwind CDN · Vanilla JS · No emoji · SVG &amp; Unicode only</span>
+    </header>
+
+    <section class="grid-wrap px-6">
+      <div class="grid">
+
+        <a class="niche" href="klinik/index.html">
+          <span class="niche-no">№ 01</span>
+          <h2 class="niche-name">Klara Skin <em>&amp; Aesthetic</em></h2>
+          <p class="niche-tag">Klinik Kecantikan · Editorial Medical</p>
+          <p class="niche-desc">Luxury medical clinic dengan visual editorial — palet bone &amp; mocha, hero portrait split, treatment grid 4-kolom, before-after dark, FAQ klinis.</p>
+          <div class="palette" aria-hidden="true">
+            <span class="swatch" style="background:#F7F2EB;"></span>
+            <span class="swatch" style="background:#7A5A45;"></span>
+            <span class="swatch" style="background:#28211B;"></span>
+            <span class="swatch" style="background:#B8995A;"></span>
+            <span class="swatch" style="background:#8C9A82;"></span>
+          </div>
+          <div class="niche-foot">
+            <span class="niche-pill">DM Serif Display + Inter</span>
+            <span class="niche-cta">Tinjau →</span>
+          </div>
+        </a>
+
+        <a class="niche" href="wedding/index.html">
+          <span class="niche-no">№ 02</span>
+          <h2 class="niche-name">Veluria <em>Atelier</em></h2>
+          <p class="niche-tag">Wedding Organizer · Bridal Couture</p>
+          <p class="niche-desc">Bridal couture atelier dengan hero monogram berputar, italic display dominan, portfolio masonry, vertical timeline proses, palet bordeaux &amp; gold.</p>
+          <div class="palette" aria-hidden="true">
+            <span class="swatch" style="background:#FAF4EC;"></span>
+            <span class="swatch" style="background:#5C1B22;"></span>
+            <span class="swatch" style="background:#B89863;"></span>
+            <span class="swatch" style="background:#C99FA0;"></span>
+            <span class="swatch" style="background:#2A1B14;"></span>
+          </div>
+          <div class="niche-foot">
+            <span class="niche-pill">Italiana + Cormorant + Inter</span>
+            <span class="niche-cta">Tinjau →</span>
+          </div>
+        </a>
+
+        <a class="niche" href="gym/index.html">
+          <span class="niche-no">№ 03</span>
+          <h2 class="niche-name">Forge <em>Athletic Club</em></h2>
+          <p class="niche-tag">Gym &amp; Fitness · Performance Brutalism</p>
+          <p class="niche-desc">Performance gym matte black + volt green, hero ticker bawah, counter live stats, programming 3 tier, facilities scroll-snap rail, metric ledger.</p>
+          <div class="palette" aria-hidden="true">
+            <span class="swatch" style="background:#0A0A0A;"></span>
+            <span class="swatch" style="background:#D6FF3D;"></span>
+            <span class="swatch" style="background:#F0EBE2;"></span>
+            <span class="swatch" style="background:#1C1C1C;"></span>
+            <span class="swatch" style="background:#A8D215;"></span>
+          </div>
+          <div class="niche-foot">
+            <span class="niche-pill">Antonio + JetBrains Mono</span>
+            <span class="niche-cta">Tinjau →</span>
+          </div>
+        </a>
+
+        <a class="niche" href="law-firm/index.html">
+          <span class="niche-no">№ 04</span>
+          <h2 class="niche-name">Wirjadinata <em>&amp; Partners</em></h2>
+          <p class="niche-tag">Law Firm · Chambers Compendium</p>
+          <p class="niche-desc">Kantor hukum dengan estetika compendium — hero seal SVG draw-in, ledger track record tabular, kredensial year-stamped, palet midnight + parchment + oxblood.</p>
+          <div class="palette" aria-hidden="true">
+            <span class="swatch" style="background:#10171F;"></span>
+            <span class="swatch" style="background:#F2EBDA;"></span>
+            <span class="swatch" style="background:#7A1F22;"></span>
+            <span class="swatch" style="background:#B5965B;"></span>
+            <span class="swatch" style="background:#0B1219;"></span>
+          </div>
+          <div class="niche-foot">
+            <span class="niche-pill">Cormorant + EB Garamond + Inter</span>
+            <span class="niche-cta">Tinjau →</span>
+          </div>
+        </a>
+
+        <a class="niche" href="skincare/index.html">
+          <span class="niche-no">№ 05</span>
+          <h2 class="niche-name">Solé <em>Botanique</em></h2>
+          <p class="niche-tag">Skincare · Botanical Apothecary</p>
+          <p class="niche-desc">Apothecary skincare dengan bottle hero floating, gradient pastel, press marquee, ingredient diary di sage section, routine builder 3-step, palet sage &amp; honey.</p>
+          <div class="palette" aria-hidden="true">
+            <span class="swatch" style="background:#F6F1E8;"></span>
+            <span class="swatch" style="background:#728475;"></span>
+            <span class="swatch" style="background:#C28B4A;"></span>
+            <span class="swatch" style="background:#D9A89B;"></span>
+            <span class="swatch" style="background:#2A2A26;"></span>
+          </div>
+          <div class="niche-foot">
+            <span class="niche-pill">Bodoni Moda + Inter</span>
+            <span class="niche-cta">Tinjau →</span>
+          </div>
+        </a>
+
+        <div class="niche coming">
+          <span class="niche-no">№ 06 – 15</span>
+          <h2 class="niche-name">10 niche <em>tersisa</em></h2>
+          <p class="niche-tag">Menunggu approval — Supplier · Properti · Kontraktor · Catering · Travel · Corporate · Finance · Digital Agency · Education · Bengkel</p>
+          <p class="niche-desc">Akan dibangun setelah 5 sample di atas direview. Setiap niche akan memiliki direksi visual independen seperti contoh di atas.</p>
+          <div class="niche-foot">
+            <span class="niche-pill">Pending review</span>
+            <span class="niche-cta">—</span>
+          </div>
+        </div>
+
       </div>
     </section>
-    <div id="collection" class="site-shell index-grid">
-      
-        <a class="index-card" href="pages/supplier-distributor.html">
-          <span>01 — Supplier / Distributor</span>
-          <h3>Nusantara Supply Co.</h3>
-          <p>Pasokan material skala besar dengan kontrol mutu yang tegas.</p>
-        </a>
-        
-        <a class="index-card" href="pages/klinik-kecantikan-kesehatan.html">
-          <span>02 — Klinik Kecantikan / Kesehatan</span>
-          <h3>Aurelia Clinic</h3>
-          <p>Perawatan estetika dan kesehatan dengan pengalaman klinik premium.</p>
-        </a>
-        
-        <a class="index-card" href="pages/properti-real-estate.html">
-          <span>03 — Properti / Real Estate</span>
-          <h3>Aruna Estates</h3>
-          <p>Properti premium untuk hunian, investasi, dan keputusan besar bernilai tinggi.</p>
-        </a>
-        
-        <a class="index-card" href="pages/kontraktor-interior.html">
-          <span>04 — Kontraktor / Interior</span>
-          <h3>Atelier Ruang</h3>
-          <p>Eksekusi interior dan konstruksi dengan standar premium yang terukur.</p>
-        </a>
-        
-        <a class="index-card" href="pages/catering-food-service.html">
-          <span>05 — Catering / Food Service</span>
-          <h3>Maison Rasa</h3>
-          <p>Catering elegan untuk acara yang membutuhkan rasa, presentasi, dan ketepatan.</p>
-        </a>
-        
-        <a class="index-card" href="pages/travel-umroh-tour.html">
-          <span>06 — Travel / Umroh / Tour</span>
-          <h3>Safara Journey</h3>
-          <p>Perjalanan umroh dan tour yang dirancang aman, nyaman, dan berkesan.</p>
-        </a>
-        
-        <a class="index-card" href="pages/wedding-organizer.html">
-          <span>07 — Wedding Organizer</span>
-          <h3>Vow Atelier</h3>
-          <p>Perayaan pernikahan yang terasa intim, elegan, dan tertata sempurna.</p>
-        </a>
-        
-        <a class="index-card" href="pages/gym-fitness-studio.html">
-          <span>08 — Gym / Fitness Studio</span>
-          <h3>Forge Performance Club</h3>
-          <p>Studio fitness premium untuk tubuh lebih kuat, disiplin, dan terarah.</p>
-        </a>
-        
-        <a class="index-card" href="pages/skincare-beauty-product.html">
-          <span>09 — Skincare Brand / Beauty Product</span>
-          <h3>Velour Skin</h3>
-          <p>Ritual skincare premium untuk kulit yang tampak sehat, halus, dan bercahaya.</p>
-        </a>
-        
-        <a class="index-card" href="pages/corporate-company-profile.html">
-          <span>10 — Corporate Company Profile</span>
-          <h3>Ardent Global Group</h3>
-          <p>Profil perusahaan yang menampilkan kredibilitas, kapasitas, dan nilai bisnis.</p>
-        </a>
-        
-        <a class="index-card" href="pages/law-firm-konsultan-hukum.html">
-          <span>11 — Law Firm / Konsultan Hukum</span>
-          <h3>Mahendra & Partners</h3>
-          <p>Pendampingan hukum profesional untuk keputusan bisnis dan personal yang krusial.</p>
-        </a>
-        
-        <a class="index-card" href="pages/finance-insurance-consultant.html">
-          <span>12 — Finance / Insurance Consultant</span>
-          <h3>Pradana Wealth Advisory</h3>
-          <p>Perencanaan finansial dan proteksi yang dibangun berdasarkan kepercayaan.</p>
-        </a>
-        
-        <a class="index-card" href="pages/digital-marketing-agency.html">
-          <span>13 — Digital Agency / Marketing Agency</span>
-          <h3>Northline Digital</h3>
-          <p>Strategi digital premium untuk brand yang ingin tumbuh dengan arah jelas.</p>
-        </a>
-        
-        <a class="index-card" href="pages/kursus-education-center.html">
-          <span>14 — Kursus / Education Center</span>
-          <h3>Cendekia Prime Center</h3>
-          <p>Pusat kursus profesional untuk hasil belajar yang lebih terarah.</p>
-        </a>
-        
-        <a class="index-card" href="pages/bengkel-automotive-service.html">
-          <span>15 — Bengkel / Automotive Service</span>
-          <h3>Prime Auto Works</h3>
-          <p>Servis kendaraan premium dengan diagnosis jelas dan pengerjaan profesional.</p>
-        </a>
-        
+
+    <div class="footer px-6">
+      <span>5 sample · 10 menyusul</span>
+      <span>Tailwind CDN · Vanilla JS · No framework build</span>
     </div>
   </main>
-  <footer class="footer">
-    <div class="site-shell">
-      <span>© <span data-year></span> Premium Landing Pages.</span>
-      <span>Static HTML, CSS, and JavaScript.</span>
-    </div>
-  </footer>
-  <script src="assets/site.js"></script>
 </body>
 </html>
