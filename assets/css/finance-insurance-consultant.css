@@ -1,0 +1,221 @@
+/* Pinnacle Wealth Advisors — Finance & insurance executive trust.
+   Visual feel: private banking, charcoal teal + pearl, data-driven layouts. */
+
+:root {
+  --ink: #0B1320;
+  --midnight: #112038;
+  --teal-deep: #0E2B3A;
+  --steel: #2B3D52;
+  --grey: #5C6B7A;
+  --pearl: #E8ECEE;
+  --paper: #F5F7F8;
+  --bone: #FBFCFC;
+  --mint: #5FA68C;
+  --mint-soft: #B0CFC1;
+  --gold: #B8995A;
+  --rule: #D2D8DC;
+  --muted: #4D5867;
+  --display: "Spectral", "Source Serif Pro", Georgia, serif;
+  --serif: "Spectral", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; } a { color: inherit; text-decoration: none; }
+
+.shell { width: min(1280px, 92%); margin: 0 auto; }
+
+.eyebrow { font-family: var(--mono); font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--mint); font-weight: 500; }
+
+h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: -0.01em; color: var(--ink); }
+h1 { font-size: clamp(54px, 6.4vw, 88px); line-height: 1; margin: 22px 0 22px; font-weight: 400; }
+h2 { font-size: clamp(34px, 4vw, 54px); line-height: 1.08; margin: 0 0 18px; }
+h3 { font-size: 22px; line-height: 1.3; margin: 0 0 8px; font-weight: 500; }
+p { margin: 0 0 14px; color: var(--muted); }
+
+/* Top */
+.top { background: var(--paper); border-bottom: 1px solid var(--rule); position: sticky; top: 0; z-index: 30; }
+.top-inner { display: grid; grid-template-columns: auto 1fr auto; gap: 40px; align-items: center; padding: 20px 0; }
+.brand { display: flex; align-items: center; gap: 16px; font-family: var(--display); font-size: 22px; font-weight: 500; }
+.brand .mark {
+  width: 44px; height: 44px; background: var(--midnight); color: var(--paper);
+  display: grid; place-items: center;
+  font-family: var(--display); font-size: 20px;
+  position: relative;
+}
+.brand .mark::after {
+  content: ""; position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 8px solid transparent; border-right: 8px solid transparent;
+  border-top: 8px solid var(--midnight);
+}
+.nav { display: flex; justify-content: center; gap: 30px; font-size: 13px; color: var(--muted); letter-spacing: 0.04em; }
+.nav a:hover { color: var(--midnight); }
+.btn-fill { background: var(--midnight); color: var(--paper); padding: 14px 26px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; transition: background .2s; }
+.btn-fill:hover { background: var(--teal-deep); }
+.btn-out { border: 1px solid var(--midnight); color: var(--midnight); padding: 14px 26px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; }
+.btn-out:hover { background: var(--midnight); color: var(--paper); }
+
+/* Hero — wealth dashboard */
+.hero { padding: 80px 0 0; border-bottom: 1px solid var(--rule); }
+.hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 70px; align-items: end; padding-bottom: 80px; }
+.hero h1 em { font-style: italic; color: var(--mint); font-weight: 400; font-family: var(--display); }
+.hero p.lead { font-size: 18px; max-width: 540px; color: var(--muted); margin: 24px 0 36px; }
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+.hero-card {
+  background: var(--midnight); color: var(--pearl);
+  border: 1px solid var(--steel);
+  padding: 40px 36px;
+  position: relative;
+}
+.hero-card .top-row { display: flex; justify-content: space-between; align-items: center; padding-bottom: 18px; border-bottom: 1px solid var(--steel); margin-bottom: 28px; }
+.hero-card .top-row .label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mint); text-transform: uppercase; }
+.hero-card .top-row .live { font-family: var(--mono); font-size: 11px; color: var(--pearl); letter-spacing: 0.22em; }
+.hero-card .top-row .live::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--mint); margin-right: 8px; vertical-align: middle; }
+.hero-card .big {
+  font-family: var(--display); font-size: 56px; line-height: 1;
+  color: var(--pearl); margin-bottom: 4px;
+}
+.hero-card .big .small { font-size: 20px; color: var(--mint-soft); }
+.hero-card .label-2 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: rgba(232, 236, 238, 0.65); text-transform: uppercase; margin-bottom: 22px; }
+
+.hero-card .chart {
+  display: flex; align-items: end; gap: 6px; height: 80px; margin-bottom: 24px;
+  border-bottom: 1px solid var(--steel); padding-bottom: 8px;
+}
+.hero-card .chart .bar { flex: 1; background: var(--mint); }
+.hero-card .chart .bar.dim { background: var(--steel); }
+.hero-card .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-top: 18px; }
+.hero-card .grid-2 > div { padding: 0; }
+.hero-card .grid-2 dt { font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em; color: rgba(232, 236, 238, 0.6); text-transform: uppercase; margin-bottom: 4px; }
+.hero-card .grid-2 dd { font-family: var(--display); font-size: 22px; color: var(--pearl); margin: 0; }
+.hero-card .grid-2 dd .delta { color: var(--mint); font-size: 14px; font-family: var(--mono); margin-left: 6px; }
+
+/* Section base */
+section { padding: 110px 0; border-bottom: 1px solid var(--rule); }
+.sec-head { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; margin-bottom: 56px; align-items: end; }
+.sec-head .num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mint); margin-bottom: 14px; text-transform: uppercase; display: block; }
+.sec-head .right { color: var(--muted); max-width: 600px; padding-bottom: 8px; font-size: 17px; }
+
+/* Services */
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.svc {
+  background: var(--bone); border: 1px solid var(--rule);
+  padding: 36px 32px;
+  position: relative;
+  display: grid; gap: 16px; grid-template-rows: auto auto auto 1fr auto;
+}
+.svc .top-row { display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
+.svc .num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mint); }
+.svc .ico { color: var(--midnight); }
+.svc h3 { font-family: var(--display); font-size: 24px; }
+.svc p { font-size: 14px; color: var(--muted); margin: 0; }
+.svc ul { padding: 0; list-style: none; margin: 12px 0 0; }
+.svc ul li {
+  padding: 8px 0; font-size: 13px; color: var(--ink);
+  border-bottom: 1px dashed var(--rule);
+  display: grid; grid-template-columns: 16px 1fr; gap: 10px;
+}
+.svc ul li::before { content: ""; width: 6px; height: 6px; background: var(--mint); border-radius: 50%; margin-top: 8px; }
+
+/* Trust band */
+.trust {
+  background: var(--midnight); color: var(--pearl);
+}
+.trust .sec-head h2 { color: var(--pearl); }
+.trust .sec-head .right { color: rgba(232, 236, 238, 0.7); }
+.trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--steel); }
+.trust-cell {
+  padding: 36px 28px;
+  border-right: 1px solid var(--steel);
+}
+.trust-cell:last-child { border-right: none; }
+.trust-cell .ico { color: var(--mint); margin-bottom: 18px; }
+.trust-cell h3 { color: var(--pearl); font-family: var(--display); font-size: 22px; }
+.trust-cell p { color: rgba(232, 236, 238, 0.7); font-size: 13px; margin: 6px 0 0; }
+.trust-cell .num {
+  font-family: var(--display); font-size: 44px; color: var(--mint);
+  line-height: 1; margin-bottom: 8px;
+}
+
+/* Why */
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border: 1px solid var(--rule); background: var(--bone); }
+.why-cell {
+  padding: 40px 36px;
+  border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: start;
+}
+.why-cell:nth-child(2n) { border-right: none; }
+.why-cell:nth-last-child(-n+2) { border-bottom: none; }
+.why-cell .num { font-family: var(--display); font-size: 56px; color: var(--mint); line-height: 1; }
+.why-cell h3 { font-family: var(--display); font-size: 24px; }
+.why-cell p { font-size: 15px; }
+
+/* Advisor */
+.advisor {
+  background: var(--midnight); color: var(--pearl);
+}
+.advisor .sec-head h2 { color: var(--pearl); }
+.advisor .sec-head .right { color: rgba(232, 236, 238, 0.7); }
+.advisor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+.advisor-photo {
+  background: linear-gradient(135deg, var(--steel), var(--teal-deep));
+  position: relative;
+  min-height: 480px;
+}
+.advisor-photo::after {
+  content: "L. WIBOWO, CFA · CFP®"; position: absolute; bottom: 24px; left: 24px;
+  font-family: var(--mono); font-size: 11px; color: var(--mint); letter-spacing: 0.22em;
+}
+.advisor-info { display: flex; flex-direction: column; justify-content: center; }
+.advisor-info .label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mint); text-transform: uppercase; }
+.advisor-info h3 { font-family: var(--display); font-size: 36px; color: var(--pearl); margin: 12px 0 12px; }
+.advisor-info > p { font-size: 16px; color: rgba(232, 236, 238, 0.75); }
+.advisor-stats { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding-top: 28px; border-top: 1px solid var(--steel); }
+.advisor-stats > div { padding: 0; }
+.advisor-stats dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: rgba(232, 236, 238, 0.6); text-transform: uppercase; margin-bottom: 4px; }
+.advisor-stats dd { font-family: var(--display); font-size: 24px; margin: 0; color: var(--pearl); }
+
+/* FAQ */
+.faq { max-width: 920px; margin: 0 auto; }
+.faq details { padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.faq details:first-child { border-top: 1px solid var(--rule); }
+.faq summary {
+  list-style: none; cursor: pointer;
+  display: flex; justify-content: space-between; gap: 24px; align-items: center;
+  font-family: var(--display); font-size: 22px; color: var(--ink);
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .plus { width: 32px; height: 32px; border: 1px solid var(--mint); border-radius: 50%; display: grid; place-items: center; color: var(--midnight); transition: transform .2s; flex-shrink: 0; }
+.faq details[open] summary .plus { transform: rotate(45deg); background: var(--mint); color: var(--paper); }
+.faq details p { margin: 12px 0 0; max-width: 720px; }
+
+/* Final */
+.final {
+  background: var(--paper); padding: 130px 0; border-bottom: none;
+  position: relative; overflow: hidden;
+}
+.final-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: end; }
+.final h2 em { font-style: italic; color: var(--mint); font-weight: 400; }
+.final p { color: var(--muted); max-width: 540px; }
+.final-card { background: var(--midnight); padding: 36px 36px; color: var(--pearl); }
+.final-card dt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; color: var(--mint); text-transform: uppercase; margin-bottom: 4px; }
+.final-card dd { font-family: var(--display); font-size: 18px; margin: 0 0 16px; color: var(--pearl); }
+.final-card dd:last-child { margin-bottom: 0; }
+
+/* Footer */
+.foot { background: var(--ink); color: rgba(232, 236, 238, 0.6); padding: 40px 0; font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; }
+.foot-inner { display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap; align-items: center; }
+.foot a { color: var(--mint); }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .nav { display: none; }
+  .hero-grid, .sec-head, .services, .trust-grid, .why-grid, .advisor-grid, .final-grid { grid-template-columns: 1fr; }
+  .why-cell, .trust-cell { border-right: none; }
+  .advisor-photo { min-height: 320px; }
+}
