@@ -1,100 +1,47 @@
-/* Maison Verdé — interactions */
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  // navbar scroll
+  const navbar = document.getElementById("navbar");
+  const onScroll = () => {
+    if (window.scrollY > 50) navbar.classList.add("scrolled");
+    else navbar.classList.remove("scrolled");
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
-  // 1. Nav scroll state
-  const navbar = document.getElementById('navbar');
-  if (navbar) {
-    const updateNav = () => {
-      if (window.scrollY > 60) navbar.classList.add('scrolled');
-      else navbar.classList.remove('scrolled');
-    };
-    updateNav();
-    window.addEventListener('scroll', updateNav, { passive: true });
-  }
-
-  // 2. IntersectionObserver — reveal-up + reveal-image
-  const reveals = document.querySelectorAll('.reveal-up, .reveal-image');
-  const io = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-revealed');
-        observer.unobserve(entry.target);
+  // reveal observer
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add("is-revealed");
+        obs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
-  reveals.forEach(el => io.observe(el));
+  }, { rootMargin: "0px 0px -10% 0px", threshold: 0.12 });
+  document.querySelectorAll(".reveal-up, .reveal-image").forEach(el => io.observe(el));
 
-  // 3. Smooth parallax for elements with .parallax-bg
-  const parallaxItems = document.querySelectorAll('.parallax-bg');
-  if (parallaxItems.length) {
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      window.requestAnimationFrame(() => {
-        const scrolled = window.scrollY;
-        parallaxItems.forEach(img => {
-          const rect = img.getBoundingClientRect();
-          const visible = rect.top < window.innerHeight && rect.bottom > 0;
-          if (!visible) return;
-          const speed = parseFloat(img.dataset.speed || 0.18);
-          const offset = (scrolled - (img.offsetParent ? img.offsetParent.offsetTop : 0)) * speed;
-          img.style.transform = `translateY(${-offset * 0.4}px)`;
-        });
-        ticking = false;
-      });
-      ticking = true;
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-  }
-
-  // 4. Counter animation for hero stats
-  const counters = document.querySelectorAll('.counter');
-  const counterIO = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = parseInt(el.dataset.target || '0', 10);
-      const duration = 1600;
-      const start = performance.now();
-      const ease = (t) => 1 - Math.pow(1 - t, 3); // easeOutCubic
-      const fmt = (v) => v >= 1000 ? Math.round(v).toLocaleString('id-ID') : Math.round(v);
-      const tick = (now) => {
-        const t = Math.min(1, (now - start) / duration);
-        el.textContent = fmt(target * ease(t));
-        if (t < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-      counterIO.unobserve(el);
+  // parallax bg
+  const parallaxes = document.querySelectorAll(".parallax-bg");
+  const onPx = () => {
+    const y = window.scrollY;
+    parallaxes.forEach(img => {
+      const rect = img.parentElement.getBoundingClientRect();
+      const speed = parseFloat(img.dataset.speed || 0.18);
+      const offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * -speed;
+      img.style.transform = `translateY(${offset}px)`;
     });
-  }, { threshold: 0.4 });
-  counters.forEach(el => counterIO.observe(el));
+  };
+  window.addEventListener("scroll", onPx, { passive: true });
+  onPx();
 
-  // 5. Year auto-fill
-  const year = document.querySelector('[data-year]');
-  if (year) year.textContent = new Date().getFullYear();
-
-  // 6. Newsletter -> WhatsApp deeplink
-  document.querySelectorAll('form[data-newsletter]').forEach(form => {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = form.querySelector('input[type="email"]').value;
-      const msg = encodeURIComponent(`Halo Maison Verde, tolong daftarkan saya ke newsletter privat. Email: ${email}`);
-      window.open(`https://wa.me/6281234567890?text=${msg}`, '_blank', 'noopener');
-      form.reset();
-    });
-  });
-
-  // 7. Smooth scroll for hash anchors
+  // hash anchor smooth
   document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', (e) => {
-      const href = a.getAttribute('href');
-      if (!href || href === '#') return;
-      const tgt = document.querySelector(href);
-      if (!tgt) return;
+    a.addEventListener("click", e => {
+      const href = a.getAttribute("href");
+      if (href.length < 2) return;
+      const target = document.querySelector(href);
+      if (!target) return;
       e.preventDefault();
-      tgt.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
-
 });

@@ -3,390 +3,280 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hutchinson &amp; Stamell — Konsultan Hukum Korporat</title>
-<meta name="description" content="Hutchinson & Stamell adalah firma hukum boutique untuk perusahaan dan keluarga. Pendekatan tenang, riset mendalam, dan strategi yang dapat dipertahankan di pengadilan.">
+<title>Hutchinson & Stamell — Counsel · Privat & Korporasi</title>
+<meta name="description" content="Hutchinson & Stamell adalah firma hukum boutique di Jakarta. Penanganan kasus privat & korporasi dengan track record litigasi 18 tahun.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAV -->
-<nav id="navbar" class="fixed inset-x-0 top-0 z-50 px-6 md:px-12 py-7 flex justify-between items-center">
-  <a href="#" class="flex items-center gap-3">
-    <span class="logo-mark">H</span>
-    <span class="logo-name">Hutchinson &amp; Stamell<small>Konsultan Hukum · 1998</small></span>
-  </a>
-  <div class="hidden md:flex space-x-9 text-[10px] tracking-[0.42em] uppercase font-mono" style="font-family:var(--font-mono);">
-    <a href="#filosofi" class="nav-link">Filosofi</a>
+<nav id="navbar">
+  <a href="#" class="logo-text">Hutchinson & Stamell<small>Counsel · Sejak 2007</small></a>
+  <div class="nav-links">
+    <a href="#firma" class="nav-link">Firma</a>
     <a href="#praktik" class="nav-link">Praktik</a>
-    <a href="#rekam" class="nav-link">Rekam Jejak</a>
-    <a href="#tim" class="nav-link">Tim</a>
-    <a href="#testi" class="nav-link">Testimoni</a>
+    <a href="#track" class="nav-link">Track Record</a>
+    <a href="#partner" class="nav-link">Partner</a>
   </div>
-  <a class="nav-cta" href="https://wa.me/6281234567890?text=Halo%20Hutchinson%20%26%20Stamell%2C%20saya%20ingin%20konsultasi.">Konsultasi</a>
+  <a href="https://wa.me/6281234567890?text=Halo%20Hutchinson%20%26%20Stamell%2C%20saya%20ingin%20konsultasi%20hukum." class="nav-cta">
+    <span>Konsultasi Privat</span>
+  </a>
 </nav>
 
-<!-- HERO -->
+<!-- HERO — full-bleed library photo -->
 <header class="hero">
-  <div class="hero-grid">
-    <!-- left -->
-    <div class="hero-left">
-      <span class="case-no reveal-up">Case No. MMXXV · Privileged Counsel</span>
-      <div class="hero-rule reveal-up reveal-d-1">
-        <span class="hero-rule-line"></span>
-        <span>Konsultan Hukum Korporat &amp; Litigasi · Sejak 1998</span>
-      </div>
-      <h1 class="hero-title reveal-up reveal-d-1">
-        Tenang dalam<br>
-        ruang sidang.<br>
-        <em>Tegas</em> dalam<br>
-        <span class="underline-brass">naskah</span>.
-      </h1>
-      <p class="hero-sub reveal-up reveal-d-2">
-        Hutchinson &amp; Stamell adalah firma hukum boutique yang melayani perusahaan dan keluarga yang membutuhkan konsultan hukum yang membaca dokumen Anda lebih teliti dari Anda sendiri.
-      </p>
-      <div class="hero-actions reveal-up reveal-d-3">
-        <a href="https://wa.me/6281234567890?text=Halo%20Hutchinson%20%26%20Stamell%2C%20saya%20butuh%20konsultasi%20hukum." class="btn-square">
-          <span>Atur Konsultasi Privat</span>
-          <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.6"/></svg>
-        </a>
-        <a href="#praktik" class="btn-square-out">Praktik &amp; Layanan</a>
-      </div>
-
-      <dl class="hero-meta reveal-up reveal-d-4">
-        <div><dt>Tahun Praktik</dt><dd>27</dd></div>
-        <div><dt>Klien Aktif</dt><dd>240+</dd></div>
-        <div><dt>Putusan Berhasil</dt><dd>92<span style="color:var(--brass); font-size:18px; vertical-align:super;">%</span></dd></div>
-        <div><dt>Konsultan Senior</dt><dd>14</dd></div>
-      </dl>
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Library">
+  </div>
+  <div class="hero-frame-rule"></div>
+  <div class="hero-inner">
+    <span class="hero-tagline">Counsel · Litigasi · Korporasi</span>
+    <h1 class="hero-title">Hukum yang<br>tidak <em>berkompromi</em><br>pada kebenaran.</h1>
+    <p class="hero-sub">Hutchinson & Stamell adalah firma hukum boutique yang menerima kasus secara selektif. Kami bekerja dengan cara lama — telaah berkas yang panjang, argumen yang dipikirkan baik-baik, dan pendampingan yang tidak bisa digantikan oleh template.</p>
+    <div class="hero-actions">
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20konsultasi%20hukum." class="btn-square solid">
+        <span>Konsultasi Privat</span>
+        <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg>
+      </a>
+      <a href="#praktik" class="btn-square"><span>Bidang Praktik</span></a>
     </div>
-
-    <!-- right · Doric column SVG + tag -->
-    <aside class="hero-right">
-      <span class="hero-stamp">Bonded Bar<br>Council</span>
-
-      <div class="hero-column">
-        <svg class="hero-column-svg" viewBox="0 0 300 600" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5">
-          <!-- capital (top) -->
-          <rect x="40" y="20" width="220" height="14" fill="currentColor"/>
-          <rect x="60" y="38" width="180" height="10" fill="currentColor"/>
-          <path d="M70 52H230L240 70H60L70 52Z" fill="currentColor"/>
-
-          <!-- echinus -->
-          <path d="M76 78H224V92H76V78Z" fill="currentColor" opacity="0.85"/>
-
-          <!-- shaft with vertical fluting -->
-          <rect x="80" y="98" width="140" height="430" stroke="currentColor" fill="none"/>
-          <line x1="98" y1="98" x2="98" y2="528"/>
-          <line x1="118" y1="98" x2="118" y2="528"/>
-          <line x1="138" y1="98" x2="138" y2="528"/>
-          <line x1="158" y1="98" x2="158" y2="528"/>
-          <line x1="178" y1="98" x2="178" y2="528"/>
-          <line x1="198" y1="98" x2="198" y2="528"/>
-
-          <!-- entasis hint -->
-          <line x1="80" y1="98" x2="220" y2="98" stroke="currentColor" stroke-width="2"/>
-          <line x1="80" y1="528" x2="220" y2="528" stroke="currentColor" stroke-width="2"/>
-
-          <!-- base -->
-          <rect x="60" y="540" width="180" height="14" fill="currentColor"/>
-          <rect x="40" y="560" width="220" height="14" fill="currentColor"/>
-
-          <!-- mark seal -->
-          <circle cx="150" cy="300" r="24" fill="none" stroke="currentColor" stroke-width="1"/>
-          <text x="150" y="306" font-family="serif" font-style="italic" font-size="22" fill="currentColor" text-anchor="middle">H&amp;S</text>
-        </svg>
-      </div>
-
-      <div class="hero-column-tag">
-        <span class="hero-column-tag-h">Privileged Counsel</span>
-        Setiap perkara kami tangani dengan kerahasiaan total. Konsultasi awal tidak dipublikasikan, tidak diarsipkan ke pihak ketiga.
-      </div>
-    </aside>
+  </div>
+  <dl class="hero-credentials">
+    <div><dt>18</dt><dd>Tahun Litigasi</dd></div>
+    <div><dt>240+</dt><dd>Kasus Privat</dd></div>
+    <div><dt>96%</dt><dd>Resolved Out-of-Court</dd></div>
+  </dl>
+  <div class="scroll-indicator">
+    <span>Gulir</span>
+    <span class="scroll-track"></span>
   </div>
 </header>
 
-<!-- PRACTICES -->
-<section id="praktik" class="practices ledger-grid">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16">
-      <div class="lg:col-span-7">
-        <span class="eyebrow dark reveal-up">Areas of Practice</span>
-        <h2 class="display-h2 dark reveal-up reveal-d-1" style="margin-top:18px;">Empat <em>pilar</em> praktik kami,<br>didukung tim spesialis penuh.</h2>
-      </div>
-      <div class="lg:col-span-5">
-        <p class="prose-soft dark reveal-up reveal-d-2">Kami tidak menjadi generalis. Setiap area praktik dipimpin oleh konsultan senior dengan rekam jejak vertikal — bukan paralegal yang bertukar topik setiap minggu.</p>
-      </div>
+<!-- PHILOSOPHY -->
+<section id="firma" class="philosophy">
+  <div class="philo-grid">
+    <div class="philo-img reveal-image">
+      <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Chamber detail">
     </div>
-
-    <div class="practice-grid">
-      <article class="practice-card reveal-up reveal-d-1">
-        <span class="practice-no">i. Korporat &amp; M&amp;A</span>
-        <h3>Korporat &amp; M&amp;A</h3>
-        <p>Restrukturisasi, akuisisi, due diligence, joint venture, ESOP, IPO advisory.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-2">
-        <span class="practice-no">ii. Litigasi</span>
-        <h3>Litigasi Komersial</h3>
-        <p>Perkara kontrak, kepailitan, sengketa pemegang saham, penegakan putusan.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-3">
-        <span class="practice-no">iii. Pajak</span>
-        <h3>Pajak &amp; Restrukturisasi</h3>
-        <p>Sengketa pajak, transfer pricing, restitusi, tax planning korporat.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-4">
-        <span class="practice-no">iv. Keluarga</span>
-        <h3>Hukum Keluarga &amp; Waris</h3>
-        <p>Perjanjian pranikah, perceraian privat, sengketa waris &amp; trust planning.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-1">
-        <span class="practice-no">v. Properti</span>
-        <h3>Properti &amp; Pertanahan</h3>
-        <p>Akuisisi tanah, sertifikasi HGB/HM, konflik agraria, pengembangan kawasan.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-2">
-        <span class="practice-no">vi. Ketenagakerjaan</span>
-        <h3>Ketenagakerjaan</h3>
-        <p>PHK, perjanjian kerja, perselisihan industrial, kebijakan internal.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-3">
-        <span class="practice-no">vii. Pidana</span>
-        <h3>Pidana Khusus</h3>
-        <p>Tipikor, money laundering, white-collar crime, banking fraud.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-      <article class="practice-card reveal-up reveal-d-4">
-        <span class="practice-no">viii. Arbitrase</span>
-        <h3>Arbitrase Internasional</h3>
-        <p>BANI, ICSID, SIAC, penyusunan klausul arbitrase, eksekusi putusan.</p>
-        <span class="practice-card-link">Praktik penuh →</span>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- TRACK RECORD timeline -->
-<section id="rekam" class="record">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16">
-      <div class="lg:col-span-7">
-        <span class="eyebrow reveal-up">Track Record</span>
-        <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:18px;">Putusan yang menjadi<br><em>preseden</em>.</h2>
-      </div>
-      <div class="lg:col-span-5">
-        <p class="prose-soft reveal-up reveal-d-2">Bagian dari rekam jejak yang dapat kami sebutkan secara publik. Banyak perkara klien kami berada dalam kerahasiaan permanen.</p>
-      </div>
-    </div>
-
-    <ol class="timeline" style="list-style:none; padding-left:64px;">
-      <li class="timeline-item reveal-up">
-        <span class="timeline-year">2024</span>
-        <h4>Akuisisi lintas-batas senilai US$ 380jt</h4>
-        <p>Memimpin tim cross-border untuk akuisisi mayoritas saham perusahaan teknologi finansial regional. Penyusunan due diligence tujuh yurisdiksi.</p>
-      </li>
-      <li class="timeline-item reveal-up reveal-d-1">
-        <span class="timeline-year">2023</span>
-        <h4>Sengketa pajak — restitusi Rp 142 miliar</h4>
-        <p>Memenangkan upaya banding di Pengadilan Pajak untuk emiten energi yang berhasil mengembalikan kelebihan bayar PPN multi-tahun.</p>
-      </li>
-      <li class="timeline-item reveal-up reveal-d-2">
-        <span class="timeline-year">2022</span>
-        <h4>Putusan MA — preseden hukum kontrak digital</h4>
-        <p>Putusan kasasi yang menjadi rujukan hukum kontrak elektronik di sektor logistik nasional.</p>
-      </li>
-      <li class="timeline-item reveal-up reveal-d-3">
-        <span class="timeline-year">2020</span>
-        <h4>Restrukturisasi grup keluarga senilai Rp 1.8tn</h4>
-        <p>Konsolidasi 12 entitas perusahaan keluarga, termasuk perjanjian pra-IPO &amp; family governance code.</p>
-      </li>
-      <li class="timeline-item reveal-up reveal-d-4">
-        <span class="timeline-year">2017</span>
-        <h4>Arbitrase ICSID — sengketa investasi negara</h4>
-        <p>Pendampingan investor asing dalam perkara arbitrase ICSID yang berakhir damai melalui mediasi privat.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ATTORNEYS -->
-<section id="tim" class="attorneys">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="text-center mb-16">
-      <span class="eyebrow dark reveal-up" style="justify-content:center;">Counsel</span>
-      <h2 class="display-h2 dark reveal-up reveal-d-1" style="margin-top:18px;">Konsultan yang <em>menulis</em> sendiri<br>setiap surat naskahnya.</h2>
-    </div>
-
-    <div class="atty-grid">
-      <article class="atty-card reveal-up reveal-d-1">
-        <div class="atty-img reveal-image"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Mira Hutchinson"></div>
-        <div class="atty-meta">
-          <div>
-            <h4>Mira A. Hutchinson, S.H., LL.M.</h4>
-            <span class="atty-role">Founding Partner</span>
-          </div>
-          <span class="atty-cite">25 thn</span>
+    <div>
+      <span class="eyebrow dark reveal-up">Filosofi Firma</span>
+      <h2 class="philo-h2 reveal-up reveal-d-1">Lebih sedikit klien, <em>lebih dalam</em> berkas.</h2>
+      <p class="philo-prose reveal-up reveal-d-2">
+        Kami memilih sedikit kasus yang bisa kami baca berkasnya sampai dasar. Hutchinson & Stamell tidak menjadi firma yang mengejar volume — kami menjadi penasihat yang dapat hadir mendalam pada setiap perkara klien, dari rekonstruksi awal hingga ruang sidang.
+      </p>
+      <div class="philo-signature reveal-up reveal-d-3">
+        <span class="philo-signature-mark">H&S</span>
+        <div>
+          <span class="philo-signature-name">William Hutchinson, S.H., LL.M & Geraldine Stamell, S.H., M.Kn</span>
+          <span class="philo-signature-role">Founding Partners</span>
         </div>
-        <p class="atty-bio">Spesialis litigasi komersial &amp; arbitrase. Lulusan Universitas Indonesia, LL.M. Harvard Law. Anggota tetap BANI Arbitration Center.</p>
-      </article>
-
-      <article class="atty-card reveal-up reveal-d-2">
-        <div class="atty-img reveal-image"><img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Bernardus Stamell"></div>
-        <div class="atty-meta">
-          <div>
-            <h4>Bernardus K. Stamell, S.H., M.Kn.</h4>
-            <span class="atty-role">Managing Partner</span>
-          </div>
-          <span class="atty-cite">22 thn</span>
-        </div>
-        <p class="atty-bio">Spesialis korporat &amp; M&amp;A lintas-batas. Lulusan Universitas Padjadjaran &amp; Notaris bersertifikat. Pernah memimpin transaksi senilai &gt; Rp 4 triliun.</p>
-      </article>
-
-      <article class="atty-card reveal-up reveal-d-3">
-        <div class="atty-img reveal-image"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Pratisha Anandita"></div>
-        <div class="atty-meta">
-          <div>
-            <h4>Pratisha Anandita, S.H., M.H.</h4>
-            <span class="atty-role">Senior Counsel</span>
-          </div>
-          <span class="atty-cite">14 thn</span>
-        </div>
-        <p class="atty-bio">Pajak &amp; restrukturisasi korporat. Lulusan Universitas Gadjah Mada. Pernah menjadi konsultan senior di firma global Big-Four advisory.</p>
-      </article>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testi" class="tests">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="text-center mb-16">
-      <span class="eyebrow reveal-up" style="justify-content:center;">Voices</span>
-      <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:18px;">Yang dikatakan oleh<br><em>klien</em> kami.</h2>
+<!-- PRACTICE AREAS -->
+<section id="praktik" class="practice">
+  <div class="practice-head">
+    <span class="eyebrow center reveal-up">Bidang Praktik Inti</span>
+    <h2 class="reveal-up reveal-d-1">Tiga ruang <em>keahlian</em>.</h2>
+  </div>
+  <div class="practice-grid">
+    <article class="practice-card reveal-up">
+      <span class="card-num">I.</span>
+      <h3>Litigasi Perdata & Komersial</h3>
+      <p>Sengketa kontrak, kepailitan, perlindungan aset privat, hingga kasus warisan keluarga yang sensitif.</p>
+      <ul class="card-bullet">
+        <li>Sengketa kontrak korporat</li>
+        <li>Kepailitan & PKPU</li>
+        <li>Sengketa warisan & wasiat</li>
+        <li>Eksekusi putusan</li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20konsultasi%20litigasi." class="card-link">Konsultasi <span>&#8594;</span></a>
+    </article>
+    <article class="practice-card reveal-up reveal-d-1">
+      <span class="card-num">II.</span>
+      <h3>Korporasi & M&amp;A</h3>
+      <p>Pendampingan transaksi korporat, restrukturisasi, akuisisi, hingga negosiasi joint venture lintas yurisdiksi.</p>
+      <ul class="card-bullet">
+        <li>Due diligence transaksi</li>
+        <li>Merger & akuisisi</li>
+        <li>Restrukturisasi korporat</li>
+        <li>Joint venture lintas negara</li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20konsultasi%20korporat." class="card-link">Konsultasi <span>&#8594;</span></a>
+    </article>
+    <article class="practice-card reveal-up reveal-d-2">
+      <span class="card-num">III.</span>
+      <h3>Hukum Privat & Keluarga</h3>
+      <p>Perceraian privat, perjanjian pra-nikah, hak asuh anak, dan pemisahan harta — ditangani dengan tertutup.</p>
+      <ul class="card-bullet">
+        <li>Perjanjian pra & pasca-nikah</li>
+        <li>Perceraian privat</li>
+        <li>Pemisahan harta gono-gini</li>
+        <li>Hak asuh & wali</li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20butuh%20konsultasi%20privat." class="card-link">Konsultasi <span>&#8594;</span></a>
+    </article>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="track" class="timeline">
+  <div class="timeline-head">
+    <span class="eyebrow dark reveal-up">Track Record Selektif</span>
+    <h2 class="reveal-up reveal-d-1">Delapan belas tahun <em>memilih kasus</em>.</h2>
+  </div>
+  <div class="timeline-list">
+    <div class="timeline-row reveal-up">
+      <div class="timeline-year">2024</div>
+      <div class="timeline-content">
+        <span class="case-tag">M&A · Mediasi</span>
+        <h4>Akuisisi grup logistik Asia Tenggara</h4>
+        <p>Mendampingi keluarga pendiri dalam akuisisi US$ 240 juta — diselesaikan tanpa litigasi melalui jalur mediasi privat.</p>
+      </div>
     </div>
-    <div class="test-grid">
-      <figure class="test-card reveal-up reveal-d-1">
-        <span class="test-mark">"</span>
-        <blockquote>Saya pernah memakai firma besar, dan saya pernah memakai Hutchinson. Pertama kali saya merasa lawyer saya benar-benar membaca kontrak saya — bukan ringkasan staffer-nya.</blockquote>
-        <figcaption class="test-figcap">
-          <div>
-            <span class="test-name">Reza Adipura</span>
-            <span class="test-role">Direktur Utama · Hospitality Group</span>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="test-card reveal-up reveal-d-2">
-        <span class="test-mark">"</span>
-        <blockquote>Yang membuat saya bertahan: tone profesional yang tetap manusiawi. Mereka tidak menambah kepanikan keluarga kami; mereka menetralkannya.</blockquote>
-        <figcaption class="test-figcap">
-          <div>
-            <span class="test-name">Anggita Rahmadani</span>
-            <span class="test-role">Klien Hukum Keluarga · Privat</span>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="test-card reveal-up reveal-d-3">
-        <span class="test-mark">"</span>
-        <blockquote>Mira menulis surat banding sendiri. Saya tahu, karena saya membandingkan tone bahasa Inggris-nya dengan kontrak yang dia draft 3 bulan sebelumnya.</blockquote>
-        <figcaption class="test-figcap">
-          <div>
-            <span class="test-name">Iwan Wirabuana</span>
-            <span class="test-role">Komisaris · Energy Holding</span>
-          </div>
-        </figcaption>
-      </figure>
+    <div class="timeline-row reveal-up reveal-d-1">
+      <div class="timeline-year">2022</div>
+      <div class="timeline-content">
+        <span class="case-tag">Litigasi · Sengketa Warisan</span>
+        <h4>Sengketa warisan grup keluarga konstruksi</h4>
+        <p>Memenangkan kasasi MA dengan putusan in-favor klien pewaris setelah 4 tahun proses pengadilan tertutup.</p>
+      </div>
+    </div>
+    <div class="timeline-row reveal-up reveal-d-2">
+      <div class="timeline-year">2019</div>
+      <div class="timeline-content">
+        <span class="case-tag">Korporat · Restrukturisasi</span>
+        <h4>Restrukturisasi grup keuangan publik</h4>
+        <p>Pendampingan restrukturisasi US$ 1.1 milyar untuk 3 anak perusahaan — disetujui kreditor tanpa PKPU.</p>
+      </div>
+    </div>
+    <div class="timeline-row reveal-up reveal-d-3">
+      <div class="timeline-year">2015</div>
+      <div class="timeline-content">
+        <span class="case-tag">Privat · Perceraian Tertutup</span>
+        <h4>Pemisahan harta keluarga konglomerat</h4>
+        <p>Negosiasi tertutup pemisahan harta dengan klausul kerahasiaan absolut — tidak pernah masuk pengadilan.</p>
+      </div>
+    </div>
+    <div class="timeline-row reveal-up reveal-d-4">
+      <div class="timeline-year">2007</div>
+      <div class="timeline-content">
+        <span class="case-tag">Pendirian Firma</span>
+        <h4>Pendirian Hutchinson & Stamell</h4>
+        <p>William Hutchinson dan Geraldine Stamell mendirikan firma boutique pertama di Indonesia yang fokus pada konsultasi privat keluarga & korporat.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- QUOTE PARALLAX -->
-<section class="quote-banner">
-  <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Buku hukum" class="parallax-bg" data-speed="0.18">
-  <div class="quote-banner-overlay"></div>
-  <div class="quote-banner-inner">
-    <p class="quote-mark">§</p>
-    <blockquote class="quote-text">"Hukum bukan tameng yang ditembakkan ke depan. Ia struktur tenang yang membuat keputusan sulit menjadi tertib."</blockquote>
-    <p class="quote-by">M.A. Hutchinson · Founding Partner</p>
+<!-- PARALLAX QUOTE -->
+<section class="parallax-banner reveal-image">
+  <img class="parallax-bg" data-speed="0.18" src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="">
+  <div class="quote">
+    <blockquote>
+      &ldquo;Mereka membaca kasus saya seperti saudara membaca surat keluarga — pelan, hati-hati, dan tahu kapan harus diam.&rdquo;
+      <cite>Klien Privat · Sengketa Warisan 2022</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partner" class="partners">
+  <div class="partners-head">
+    <span class="eyebrow center reveal-up">Founding Partners</span>
+    <h2 class="reveal-up reveal-d-1">Dua nama, <em>satu cara</em> bekerja.</h2>
+  </div>
+  <div class="partners-grid">
+    <article class="partner-card reveal-up">
+      <div class="partner-img"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="William Hutchinson"></div>
+      <div class="partner-info">
+        <h4>William Hutchinson, S.H., LL.M</h4>
+        <span class="partner-role">Senior Partner · Litigasi & Korporat</span>
+        <p>Lulusan Universitas Indonesia (S.H., 2003) dan University of Cambridge (LL.M, 2006). Mendalami sengketa komersial lintas yurisdiksi.</p>
+        <ul class="partner-creds">
+          <li>Bonded · PERADI Anggota No. 0094</li>
+          <li>Member · International Bar Association</li>
+          <li>Penulis kolom hukum Bisnis Indonesia (2014–2019)</li>
+        </ul>
+      </div>
+    </article>
+    <article class="partner-card reveal-up reveal-d-1">
+      <div class="partner-img"><img src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Geraldine Stamell"></div>
+      <div class="partner-info">
+        <h4>Geraldine Stamell, S.H., M.Kn</h4>
+        <span class="partner-role">Managing Partner · Privat & Keluarga</span>
+        <p>Lulusan Universitas Padjadjaran (S.H., 2001) dan Universitas Gadjah Mada (M.Kn, 2005). Spesialis hukum privat dengan klausul kerahasiaan.</p>
+        <ul class="partner-creds">
+          <li>Bonded · Notaris & PPAT bersertifikat</li>
+          <li>Member · Asia-Pacific Family Law Network</li>
+          <li>Mengajar tamu Sekolah Tinggi Hukum Indonesia</li>
+        </ul>
+      </div>
+    </article>
   </div>
 </section>
 
 <!-- CTA -->
-<section id="kontak" class="cta">
-  <div class="max-w-5xl mx-auto px-6 md:px-12 text-center">
-    <span class="eyebrow reveal-up" style="justify-content:center; color:var(--brass-light);">Atur Konsultasi Privat</span>
-    <h2 class="display-h2 reveal-up reveal-d-1" style="margin:18px 0 24px; color:var(--bone);">Telepon kami sebelum<br>perkara <em>menulis sendiri</em>.</h2>
-    <p class="prose-soft reveal-up reveal-d-2" style="max-width:38rem; margin:0 auto 36px; color:rgba(248,241,221,0.8);">Konsultasi pertama 60 menit, gratis, dan rahasia. Kami akan menjawab apakah kasus Anda layak kami tangani — dengan jujur.</p>
-    <div class="hero-actions reveal-up reveal-d-3" style="justify-content:center;">
-      <a href="https://wa.me/6281234567890?text=Halo%20Hutchinson%20%26%20Stamell%2C%20saya%20ingin%20mengatur%20konsultasi%20privat." class="btn-square dark"><span>WhatsApp Kantor</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.6"/></svg></a>
-      <a href="tel:+622150991882" class="btn-square-out">+62 21 5099 1882</a>
-    </div>
+<section class="cta-banner">
+  <div class="cta-inner">
+    <span class="eyebrow dark center reveal-up">Konsultasi Awal Tertutup</span>
+    <h2 class="reveal-up reveal-d-1">Mulai dengan <em>perjanjian kerahasiaan</em>.</h2>
+    <p class="reveal-up reveal-d-2">Setiap konsultasi awal dimulai dengan NDA dan sesi 90 menit. Anda tidak perlu menjelaskan kasus dua kali — dokumentasi rapi, riwayat tersimpan rahasia.</p>
+    <a href="https://wa.me/6281234567890?text=Halo%20Hutchinson%20%26%20Stamell%2C%20saya%20ingin%20konsultasi%20privat." class="btn-square dark reveal-up reveal-d-3">
+      <span>Jadwalkan Konsultasi</span>
+      <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg>
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="foot">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <a href="#" class="flex items-center gap-3" style="margin-bottom:24px;">
-        <span class="logo-mark">H</span>
-        <span class="logo-name">Hutchinson &amp; Stamell<small>Konsultan Hukum · 1998</small></span>
-      </a>
-      <p class="prose-soft" style="max-width:24rem; font-size:15px; margin-bottom:24px;">Firma hukum boutique untuk perusahaan dan keluarga yang menghargai kerahasiaan, ketelitian, dan rekam jejak.</p>
-      <span class="foot-h">Surat Pengetahuan Hukum</span>
-      <form class="news-form" data-newsletter>
-        <input type="email" placeholder="Email Anda" required>
-        <button type="submit">Kirim</button>
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>Hutchinson & <em>Stamell</em></h3>
+      <p>Firma hukum boutique di Jakarta. Litigasi, korporat, dan hukum privat keluarga. Bonded · PERADI · IBA Members. Selektif menerima klien.</p>
+      <form class="footer-newsletter" onsubmit="return false;">
+        <input type="email" placeholder="Email untuk legal brief bulanan">
+        <button type="submit">Daftar</button>
       </form>
     </div>
-    <div class="lg:col-span-2">
-      <h4 class="foot-h">Praktik</h4>
-      <ul class="foot-l">
-        <li><a href="#praktik">Korporat &amp; M&amp;A</a></li>
-        <li><a href="#praktik">Litigasi</a></li>
-        <li><a href="#praktik">Pajak</a></li>
-        <li><a href="#praktik">Keluarga &amp; Waris</a></li>
+    <div class="footer-col">
+      <h4>Firma</h4>
+      <ul>
+        <li><a href="#firma">Tentang</a></li>
+        <li><a href="#praktik">Bidang Praktik</a></li>
+        <li><a href="#track">Track Record</a></li>
+        <li><a href="#partner">Partner</a></li>
       </ul>
     </div>
-    <div class="lg:col-span-2">
-      <h4 class="foot-h">Firma</h4>
-      <ul class="foot-l">
-        <li><a href="#tim">Tim Konsultan</a></li>
-        <li><a href="#rekam">Rekam Jejak</a></li>
-        <li><a href="#testi">Testimoni</a></li>
-        <li><a href="#kontak">Konsultasi</a></li>
-      </ul>
-    </div>
-    <div class="lg:col-span-3">
-      <h4 class="foot-h">Kantor</h4>
-      <address style="font-style:normal; font-family:var(--font-serif); font-size:15px; color:rgba(248,241,221,0.65); line-height:1.7;">
-        Hutchinson &amp; Stamell House<br>
-        Wisma Mulia, Lt. 28<br>
-        Jl. Jend. Gatot Subroto Kav. 42<br>
-        Jakarta Selatan, 12710<br><br>
-        <a href="mailto:counsel@hutchinson-stamell.id" style="color:var(--brass-light);">counsel@hutchinson-stamell.id</a><br>
-        <a href="tel:+622150991882" style="color:var(--brass-light);">+62 21 5099 1882</a>
+    <div class="footer-col">
+      <h4>Kantor Firma</h4>
+      <address>
+        Hutchinson & Stamell Counsel<br>
+        Wisma Kuningan, Lt. 12<br>
+        Jl. HR Rasuna Said Kav. 5<br>
+        Jakarta Selatan, 12950<br><br>
+        <a href="mailto:counsel@hs-counsel.id">counsel@hs-counsel.id</a><br>
+        <a href="tel:+6281234567890">+62 812 3456 7890</a>
       </address>
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8" style="border-top:1px solid var(--rule-light); display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-family:var(--font-mono); font-size:11px; letter-spacing:0.3em; text-transform:uppercase; color:rgba(248,241,221,0.45);">
-    <p>© 2025 Hutchinson &amp; Stamell. Privileged Counsel.</p>
-    <div class="flex gap-6">
-      <a href="#" style="color:rgba(248,241,221,0.6);">LinkedIn</a>
-      <a href="#" style="color:rgba(248,241,221,0.6);">Bar Council</a>
-      <a href="#" style="color:rgba(248,241,221,0.6);">Privacy</a>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Hutchinson & Stamell Counsel. Bonded · PERADI Members.</span>
+    <div class="footer-bottom-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Kebijakan Privasi</a>
+      <a href="#">Disclaimer Profesional</a>
     </div>
   </div>
 </footer>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
