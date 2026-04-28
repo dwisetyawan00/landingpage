@@ -10,6 +10,9 @@ LANDINGS = [
     {
         "slug": "supplier-distributor",
         "number": "01",
+        "theme": "supplier",
+        "layout": "split-card",
+        "pattern": "structure",
         "brand": "Nusantara Supply Co.",
         "category": "Supplier / Distributor",
         "eyebrow": "B2B Supply Partner",
@@ -94,6 +97,9 @@ LANDINGS = [
     {
         "slug": "klinik-kecantikan-kesehatan",
         "number": "02",
+        "theme": "clinic",
+        "layout": "boutique",
+        "pattern": "soft",
         "brand": "Aurelia Clinic",
         "category": "Klinik Kecantikan / Kesehatan",
         "eyebrow": "Luxury Medical Care",
@@ -168,6 +174,9 @@ LANDINGS = [
     {
         "slug": "properti-real-estate",
         "number": "03",
+        "theme": "property",
+        "layout": "showcase",
+        "pattern": "architecture",
         "brand": "Aruna Estates",
         "category": "Properti / Real Estate",
         "eyebrow": "Luxury Property Advisory",
@@ -242,6 +251,9 @@ LANDINGS = [
     {
         "slug": "kontraktor-interior",
         "number": "04",
+        "theme": "interior",
+        "layout": "editorial",
+        "pattern": "material",
         "brand": "Atelier Ruang",
         "category": "Kontraktor / Interior",
         "eyebrow": "Design Build Authority",
@@ -317,6 +329,9 @@ LANDINGS = [
     {
         "slug": "catering-food-service",
         "number": "05",
+        "theme": "catering",
+        "layout": "boutique",
+        "pattern": "culinary",
         "brand": "Maison Rasa",
         "category": "Catering / Food Service",
         "eyebrow": "Premium Catering Service",
@@ -391,6 +406,9 @@ LANDINGS = [
     {
         "slug": "travel-umroh-tour",
         "number": "06",
+        "theme": "travel",
+        "layout": "showcase",
+        "pattern": "journey",
         "brand": "Safara Journey",
         "category": "Travel / Umroh / Tour",
         "eyebrow": "Trusted Journey Planner",
@@ -465,6 +483,9 @@ LANDINGS = [
     {
         "slug": "wedding-organizer",
         "number": "07",
+        "theme": "wedding",
+        "layout": "editorial",
+        "pattern": "romance",
         "brand": "Vow Atelier",
         "category": "Wedding Organizer",
         "eyebrow": "Luxury Wedding Planning",
@@ -540,6 +561,9 @@ LANDINGS = [
     {
         "slug": "gym-fitness-studio",
         "number": "08",
+        "theme": "gym",
+        "layout": "bold",
+        "pattern": "performance",
         "brand": "Forge Performance Club",
         "category": "Gym / Fitness Studio",
         "eyebrow": "Premium Fitness Studio",
@@ -614,6 +638,9 @@ LANDINGS = [
     {
         "slug": "skincare-beauty-product",
         "number": "09",
+        "theme": "skincare",
+        "layout": "boutique",
+        "pattern": "beauty",
         "brand": "Velour Skin",
         "category": "Skincare Brand / Beauty Product",
         "eyebrow": "Luxury Skincare Brand",
@@ -688,6 +715,9 @@ LANDINGS = [
     {
         "slug": "corporate-company-profile",
         "number": "10",
+        "theme": "corporate",
+        "layout": "split-card",
+        "pattern": "boardroom",
         "brand": "Ardent Global Group",
         "category": "Corporate Company Profile",
         "eyebrow": "Executive Company Profile",
@@ -772,6 +802,9 @@ LANDINGS = [
     {
         "slug": "law-firm-konsultan-hukum",
         "number": "11",
+        "theme": "law",
+        "layout": "editorial",
+        "pattern": "legal",
         "brand": "Mahendra & Partners",
         "category": "Law Firm / Konsultan Hukum",
         "eyebrow": "Legal Advisory Office",
@@ -846,6 +879,9 @@ LANDINGS = [
     {
         "slug": "finance-insurance-consultant",
         "number": "12",
+        "theme": "finance",
+        "layout": "split-card",
+        "pattern": "wealth",
         "brand": "Pradana Wealth Advisory",
         "category": "Finance / Insurance Consultant",
         "eyebrow": "Financial Protection Advisory",
@@ -920,6 +956,9 @@ LANDINGS = [
     {
         "slug": "digital-marketing-agency",
         "number": "13",
+        "theme": "agency",
+        "layout": "showcase",
+        "pattern": "digital",
         "brand": "Northline Digital",
         "category": "Digital Agency / Marketing Agency",
         "eyebrow": "High-Ticket Growth Partner",
@@ -994,6 +1033,9 @@ LANDINGS = [
     {
         "slug": "kursus-education-center",
         "number": "14",
+        "theme": "education",
+        "layout": "split-card",
+        "pattern": "learning",
         "brand": "Cendekia Prime Center",
         "category": "Kursus / Education Center",
         "eyebrow": "Premium Learning Center",
@@ -1058,6 +1100,9 @@ LANDINGS = [
     {
         "slug": "bengkel-automotive-service",
         "number": "15",
+        "theme": "automotive",
+        "layout": "bold",
+        "pattern": "automotive",
         "brand": "Prime Auto Works",
         "category": "Bengkel / Automotive Service",
         "eyebrow": "Premium Automotive Service",
@@ -1183,6 +1228,7 @@ def page(data):
             """
         )
 
+    body_class = f'theme-{data["theme"]} layout-{data["layout"]} visual-pattern-{data["pattern"]}'
     return f"""<!doctype html>
 <html lang="id">
 <head>
@@ -1192,7 +1238,7 @@ def page(data):
   <meta name="description" content="{data["lead"]}">
   <link rel="stylesheet" href="../assets/styles.css">
 </head>
-<body>
+<body class="{body_class}">
   <header class="topbar">
     <div class="site-shell nav">
       <a class="brand" href="../index.html" aria-label="Kembali ke katalog">
@@ -1212,7 +1258,7 @@ def page(data):
   <main>
     <section class="hero">
       <div class="site-shell hero-grid">
-        <div>
+        <div class="hero-copy">
           <span class="eyebrow">{data["eyebrow"]}</span>
           <h1>{data["title"]}</h1>
           <p class="hero-lead">{data["lead"]}</p>
