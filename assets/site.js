@@ -5,7 +5,7 @@ document.querySelectorAll("form[data-whatsapp]").forEach((form) => {
     const message = Array.from(data.entries())
       .filter(([, value]) => String(value).trim())
       .map(([key, value]) => `${key}: ${value}`)
-      .join("%0A");
+      .join("\n");
     const base = form.getAttribute("data-whatsapp");
     window.open(`${base}${encodeURIComponent(message)}`, "_blank", "noopener");
   });

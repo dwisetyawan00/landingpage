@@ -1229,6 +1229,7 @@ def page(data):
         )
 
     body_class = f'theme-{data["theme"]} layout-{data["layout"]} visual-pattern-{data["pattern"]}'
+    footer_brand = data["brand"].rstrip(".")
     return f"""<!doctype html>
 <html lang="id">
 <head>
@@ -1366,7 +1367,7 @@ def page(data):
 
   <footer class="footer">
     <div class="site-shell">
-      <span>© <span data-year></span> {data["brand"]}. All rights reserved.</span>
+      <span>© <span data-year></span> {footer_brand}. All rights reserved.</span>
       <a href="../index.html">Kembali ke katalog landing page</a>
     </div>
   </footer>
