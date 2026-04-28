@@ -1,103 +1,87 @@
-# Premium Landing Pages — 15 Niche · 15 Visual Identity
+# Premium Niche Landing Pages
 
-Repositori ini berisi **15 landing page premium**, di mana setiap halaman memiliki
-**design language sendiri** — palet warna, sistem tipografi, layout, irama spasial,
-dan visual rhythm yang dirancang berdasarkan psikologi pembeli (buyer psychology)
-masing-masing niche.
+Koleksi landing page premium yang dibangun untuk lima belas niche bisnis berbeda. Setiap niche memiliki **visual identity, palet warna, tipografi, layout, dan animasi yang independen** — bukan template generik dengan pertukaran teks atau warna.
 
-> **Tidak ada shared CSS template.**
-> Setiap halaman menggunakan file CSS terpisah dengan `:root` tokens, font stack,
-> dan layout system yang dirancang sebagai bisnis nyata — bukan sebagai showcase
-> komponen yang dipukul rata.
+> Status saat ini: **5 sample preview** untuk review. 10 niche tersisa akan dibangun setelah sample disetujui.
 
-## Struktur
+## Sample Preview (5 niche)
+
+| # | Niche | Identity | Folder |
+|---|---|---|---|
+| 01 | Klinik Kecantikan | Editorial luxury medical · DM Serif Display + Inter · palet bone &amp; mocha | [`klinik/`](./klinik/) |
+| 02 | Wedding Organizer | Bridal couture atelier · Italiana + Cormorant · palet bordeaux &amp; gold | [`wedding/`](./wedding/) |
+| 03 | Gym &amp; Fitness | Performance brutalism · Antonio + JetBrains Mono · matte black + volt green | [`gym/`](./gym/) |
+| 04 | Law Firm | Chambers compendium · Cormorant + EB Garamond · midnight + parchment + oxblood | [`law-firm/`](./law-firm/) |
+| 05 | Skincare | Botanical apothecary · Bodoni Moda + Inter · sage + honey | [`skincare/`](./skincare/) |
+
+## Niche Tersisa (akan dibangun)
+
+Supplier · Properti · Kontraktor · Catering · Travel · Corporate · Finance · Digital Agency · Education · Bengkel.
+
+Setiap niche akan dibangun dengan tingkat distinction yang sama dengan lima sample di atas (palet, tipografi, layout, animasi, hero treatment, copywriting).
+
+## Struktur Repo
 
 ```
-.
-├── index.html                          # Katalog 15 halaman
-├── assets/
-│   ├── css/
-│   │   ├── index.css
-│   │   ├── supplier-distributor.css
-│   │   ├── klinik-kecantikan-kesehatan.css
-│   │   ├── properti-real-estate.css
-│   │   ├── kontraktor-interior.css
-│   │   ├── catering-food-service.css
-│   │   ├── travel-umroh-tour.css
-│   │   ├── wedding-organizer.css
-│   │   ├── gym-fitness-studio.css
-│   │   ├── skincare-beauty-product.css
-│   │   ├── corporate-company-profile.css
-│   │   ├── law-firm-konsultan-hukum.css
-│   │   ├── finance-insurance-consultant.css
-│   │   ├── digital-marketing-agency.css
-│   │   ├── education-kursus-academy.css
-│   │   └── bengkel-automotive-service.css
-│   └── site.js                         # Tahun footer + form WhatsApp
-└── pages/
-    └── ...                             # 15 file HTML, 1 untuk tiap niche
+/
+├── index.html                # katalog utama (link ke 5 sample)
+├── klinik/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── assets/
+│       ├── img/
+│       └── icon/
+├── wedding/
+│   └── (struktur sama)
+├── gym/
+├── law-firm/
+└── skincare/
 ```
 
-## Daftar halaman & visual identity
+## Stack
 
-| № | Halaman | Visual identity |
-| --- | --- | --- |
-| 01 | Supplier &amp; Distributor | Industrial corporate · ledger aesthetic · steel monospace |
-| 02 | Klinik Kecantikan &amp; Kesehatan | Luxury medical · botanical sage rose · editorial centered |
-| 03 | Properti &amp; Real Estate | Cinematic dark · brass accent · magazine editorial |
-| 04 | Kontraktor &amp; Interior | Atelier studio · terracotta walnut · drafting numbered sections |
-| 05 | Catering &amp; Food Service | Apothecary fine dining · claret &amp; gold · dot-leader pricing |
-| 06 | Travel · Umroh · Tour | Spiritual premium · deep teal · arch motif · itinerary timeline |
-| 07 | Wedding Organizer | Bridal couture · bordeaux &amp; rose · monogrammed atelier |
-| 08 | Gym &amp; Fitness Studio | Performance · matte black · volt green · live data ticker |
-| 09 | Skincare &amp; Beauty Product | Botanical apothecary · sage &amp; peach · hero bottle display |
-| 10 | Corporate Company Profile | Annual report · navy &amp; copper · holding multi-divisi |
-| 11 | Law Firm &amp; Konsultan Hukum | Legal authority · oxblood &amp; gilt · compendium symbols |
-| 12 | Finance &amp; Insurance Consultant | Private banking · midnight teal &amp; mint · dashboard chart |
-| 13 | Digital &amp; Marketing Agency | Boutique editorial · oversized type · asymmetric portfolio |
-| 14 | Education Center &amp; Kursus | Scholastic prospectus · forest green &amp; ivory |
-| 15 | Bengkel &amp; Automotive Service | Industrial workshop · matte black + hi-vis amber · work-order ticket |
+- **Tailwind CSS** (CDN) untuk utility class.
+- **Vanilla JavaScript** — no framework, no bundler.
+- **Google Fonts** — kombinasi font berbeda per niche.
+- **Unsplash** untuk placeholder imagery (mudah diganti dengan asset bisnis).
+- **SVG &amp; Unicode** untuk semua icon &amp; ornament. Tidak menggunakan emoji.
 
-## Cara menjalankan
+## Animasi
 
-Buka `index.html` langsung di browser, atau jalankan server statis:
+Setiap niche memiliki animasi gimmick yang berbeda, antara lain:
+
+- **Klinik:** subtle hero zoom, clip-path image reveal, counter stats.
+- **Wedding:** monogram concentric reveal, italic display fade-up, parallax floral.
+- **Gym:** hero stats counter, ticker bar bawah, scroll-snap facility rail, metric counters.
+- **Law Firm:** SVG seal stroke draw-in, ledger row stagger reveal, italic letterform reveal.
+- **Skincare:** bottle floating loop, marquee press strip, soft pastel gradient hero shapes.
+
+Semua animasi memakai easing `cubic-bezier(0.16, 1, 0.3, 1)` untuk feel editorial yang smooth.
+
+## Cara Menjalankan
 
 ```bash
+# clone repo, lalu serve sebagai static
 python3 -m http.server 8080
-# lalu buka http://localhost:8080
+# buka http://localhost:8080
 ```
 
-## Mengganti nomor WhatsApp
+Atau langsung deploy ke GitHub Pages, Netlify, Vercel, atau Cloudflare Pages — tidak perlu build.
 
-Setiap CTA pada halaman menggunakan format:
+## Mengganti Nomor WhatsApp
 
-```
-https://wa.me/<nomor>?text=<pesan>
-```
-
-Saat ini nomor placeholder adalah `6281234567890`. Untuk mengubah seluruhnya:
+Semua tombol WhatsApp menggunakan placeholder `6281234567890`. Cari &amp; ganti per folder:
 
 ```bash
-# di root repository
-grep -rl "6281234567890" pages/ | xargs sed -i 's/6281234567890/<nomor-baru>/g'
+grep -rl "6281234567890" klinik wedding gym law-firm skincare
+# lalu sed -i 's/6281234567890/<NOMOR_KLIEN>/g' <file>
 ```
 
-## Deployment
+## Prinsip Desain
 
-Halaman ini adalah HTML/CSS murni tanpa framework, dapat di-deploy ke:
-
-- GitHub Pages
-- Netlify
-- Vercel
-- Cloudflare Pages
-- Hosting statis lainnya
-
-## Prinsip desain
-
-- Tidak ada shared CSS template — setiap halaman berdiri sendiri.
-- Tidak ada AI vibes / AI gradient / template generator aesthetic.
-- Tidak ada emoji dekoratif — hanya SVG icon dan Unicode symbol.
-- Setiap halaman dirancang sebagai bisnis nyata, dengan identitas yang
-  konsisten di header, hero, sections, testimonial, FAQ, dan final CTA.
-- Setiap halaman menutup dengan WhatsApp CTA yang relevan dengan konversi
-  utama niche tersebut (booking, konsultasi, inquiry, atau order).
+- Tidak ada template generik — setiap niche dibangun terpisah dari nol.
+- Tidak ada AI vibes / AI DNA / startup-SaaS aesthetic.
+- Tidak ada emoji. SVG &amp; Unicode saja.
+- Tidak ada perubahan cursor.
+- Whitespace, hierarki tipografi, dan editorial framing menjadi prioritas utama.

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORGE Athletic Club — Strength &amp; Performance</title>
+  <meta name="description" content="FORGE Athletic Club — gym performance untuk atlet, eksekutif, dan individu yang serius dengan transformasinya.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <nav id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-700 px-6 md:px-12 py-5 flex items-center justify-between text-white">
+    <a href="#" class="logo flex items-center gap-3">
+      <span class="logo-mark">F</span>
+      <span class="logo-name">Forge<small>Athletic Club · 24/7</small></span>
+    </a>
+    <div class="hidden md:flex space-x-8 text-[11px] tracking-[0.32em] uppercase font-mono">
+      <a href="#program" class="nav-link">Program</a>
+      <a href="#facility" class="nav-link">Fasilitas</a>
+      <a href="#coach" class="nav-link">Coach</a>
+      <a href="#hasil" class="nav-link">Hasil</a>
+      <a href="#trial" class="nav-link">Free Trial</a>
+    </div>
+    <a href="#trial" class="hidden md:inline-flex nav-cta items-center gap-3 text-[11px] tracking-[0.28em] uppercase font-mono">
+      <span class="cta-dot"></span> Klaim 1 Sesi Gratis
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero relative min-h-screen overflow-hidden bg-black text-white">
+    <div class="hero-bg absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+           alt="Athlete training" class="hero-bg-img">
+      <div class="hero-bg-overlay absolute inset-0"></div>
+      <div class="hero-bg-grid absolute inset-0 pointer-events-none"></div>
+    </div>
+
+    <div class="hero-content relative z-10 px-6 md:px-12 lg:px-16 pt-32 pb-20 min-h-screen flex flex-col">
+      <div class="hero-top flex-1 grid lg:grid-cols-12 gap-12 items-end">
+        <div class="lg:col-span-8">
+          <div class="hero-tags reveal-up">
+            <span class="hero-tag">№ 12 / Kuningan</span>
+            <span class="hero-tag">24/7 access</span>
+            <span class="hero-tag pulse"><span class="dot"></span> Live · 84 anggota di lantai</span>
+          </div>
+          <h1 class="hero-title reveal-up reveal-d-1">
+            <span>Tubuh terbaikmu</span><br>
+            <span class="hl">tidak ditunggu —</span><br>
+            <span class="italic">ia ditempa.</span>
+          </h1>
+          <p class="hero-sub reveal-up reveal-d-2">Performance gym untuk individu yang serius dengan transformasinya. Programming oleh strength coach bersertifikasi, peralatan yang kami sebut sebagai workshop — bukan dekorasi.</p>
+          <div class="hero-actions reveal-up reveal-d-3">
+            <a href="#trial" class="btn-volt"><span>Klaim 1 Sesi Gratis</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.4"/></svg></a>
+            <a href="#program" class="btn-ghost">Lihat Program →</a>
+          </div>
+        </div>
+        <aside class="lg:col-span-4 hero-card reveal-up reveal-d-3">
+          <div class="hero-card-head"><span>Stat Lantai · Live</span><span class="dot"></span></div>
+          <ul class="hero-card-list">
+            <li><span class="lbl">Member aktif</span><strong class="counter" data-target="2840">0</strong></li>
+            <li><span class="lbl">Sesi minggu ini</span><strong class="counter" data-target="612">0</strong></li>
+            <li><span class="lbl">Strength coach</span><strong class="counter" data-target="14">0</strong></li>
+            <li><span class="lbl">PR baru bulan ini</span><strong class="counter" data-target="186">0</strong></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ticker -->
+    <div class="ticker absolute bottom-0 inset-x-0 z-10">
+      <div class="ticker-track">
+        <span>FORGE · ATHLETIC CLUB</span><span>· STRENGTH</span><span>· CONDITIONING</span><span>· OLYMPIC</span><span>· POWERLIFTING</span><span>· COMBAT</span><span>· RECOVERY</span>
+        <span>FORGE · ATHLETIC CLUB</span><span>· STRENGTH</span><span>· CONDITIONING</span><span>· OLYMPIC</span><span>· POWERLIFTING</span><span>· COMBAT</span><span>· RECOVERY</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROGRAM -->
+  <section id="program" class="programs py-28 md:py-36 px-6 md:px-12 lg:px-16">
+    <div class="max-w-7xl mx-auto">
+      <div class="sec-head grid lg:grid-cols-12 gap-10 items-end mb-16">
+        <div class="lg:col-span-7">
+          <span class="eyebrow reveal-up">// 01 Programming</span>
+          <h2 class="display-h2 reveal-up reveal-d-1">Tiga track — <span class="hl">tidak ada bonus,</span> <span class="italic">tidak ada freebie.</span></h2>
+        </div>
+        <p class="lg:col-span-5 prose-mute reveal-up reveal-d-2">Programming kami dibangun untuk hasil yang dapat diukur. Tiap track diatur oleh strength coach senior dan dapat di-customize berdasarkan goals individu.</p>
+      </div>
+
+      <div class="prog-grid grid md:grid-cols-3">
+        <article class="prog-card reveal-up reveal-d-1">
+          <span class="prog-num">01</span>
+          <h3 class="prog-name">CORE</h3>
+          <p class="prog-tag">Self-directed · 24/7 floor access</p>
+          <ul class="prog-list">
+            <li>Akses 24/7 fasilitas utama</li>
+            <li>Konsultasi awal (45 menit)</li>
+            <li>App tracking + data dashboard</li>
+            <li>Community open class 3x / minggu</li>
+          </ul>
+          <div class="prog-price"><span class="from">Mulai</span><strong>Rp 1.8 jt</strong><span class="per">/ bulan</span></div>
+          <a href="#trial" class="prog-cta">Mulai program →</a>
+        </article>
+
+        <article class="prog-card prog-card--featured reveal-up reveal-d-2">
+          <span class="prog-flag">Pilihan member</span>
+          <span class="prog-num">02</span>
+          <h3 class="prog-name">PRO</h3>
+          <p class="prog-tag">Coached · Strength &amp; conditioning</p>
+          <ul class="prog-list">
+            <li>1-on-1 coach 2x / minggu</li>
+            <li>Custom programming bulanan</li>
+            <li>InBody &amp; performance test</li>
+            <li>Recovery suite + sauna</li>
+          </ul>
+          <div class="prog-price"><span class="from">Mulai</span><strong>Rp 4.8 jt</strong><span class="per">/ bulan</span></div>
+          <a href="#trial" class="prog-cta">Mulai program →</a>
+        </article>
+
+        <article class="prog-card reveal-up reveal-d-3">
+          <span class="prog-num">03</span>
+          <h3 class="prog-name">ELITE</h3>
+          <p class="prog-tag">High-performance · Eksekutif &amp; atlet</p>
+          <ul class="prog-list">
+            <li>1-on-1 coach 4x / minggu</li>
+            <li>Periodisasi tahunan</li>
+            <li>Nutritionist &amp; physio rujukan</li>
+            <li>Private bay + concierge schedule</li>
+          </ul>
+          <div class="prog-price"><span class="from">Mulai</span><strong>Rp 12 jt</strong><span class="per">/ bulan</span></div>
+          <a href="#trial" class="prog-cta">Mulai program →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES -->
+  <section id="facility" class="facility py-28 md:py-36 bg-onyx text-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 mb-14 grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7">
+        <span class="eyebrow light reveal-up">// 02 Floor map</span>
+        <h2 class="display-h2 light reveal-up reveal-d-1">Bukan studio. <span class="hl">Workshop.</span></h2>
+      </div>
+      <p class="lg:col-span-5 prose-mute light reveal-up reveal-d-2">Tujuh zona terpisah dengan peralatan komersial yang kami pilih dari Eleiko, Hammer Strength, Rogue, dan Concept2. Tidak ada kompromi.</p>
+    </div>
+
+    <div class="fac-rail">
+      <article class="fac-card reveal-up">
+        <div class="fac-img" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="fac-meta"><span class="fac-num">01</span><h3>Strength Floor</h3><p>Eleiko racks · powerlifting platforms</p></div>
+      </article>
+      <article class="fac-card reveal-up reveal-d-1">
+        <div class="fac-img" style="background-image:url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="fac-meta"><span class="fac-num">02</span><h3>Hypertrophy</h3><p>Hammer Strength · selectorized line</p></div>
+      </article>
+      <article class="fac-card reveal-up reveal-d-2">
+        <div class="fac-img" style="background-image:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="fac-meta"><span class="fac-num">03</span><h3>Conditioning</h3><p>Concept2 · ski-erg · assault bikes</p></div>
+      </article>
+      <article class="fac-card reveal-up reveal-d-3">
+        <div class="fac-img" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="fac-meta"><span class="fac-num">04</span><h3>Combat &amp; Mobility</h3><p>Heavy bags · ring · mobility floor</p></div>
+      </article>
+      <article class="fac-card reveal-up reveal-d-4">
+        <div class="fac-img" style="background-image:url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="fac-meta"><span class="fac-num">05</span><h3>Recovery Suite</h3><p>Sauna · cold plunge · compression</p></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COACH -->
+  <section id="coach" class="coach py-28 md:py-36 px-6 md:px-12 lg:px-16">
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-14 items-center">
+      <div class="lg:col-span-5 reveal-image">
+        <div class="coach-img-wrap">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Strength coach">
+          <span class="coach-tag">HEAD COACH</span>
+        </div>
+      </div>
+      <div class="lg:col-span-7 lg:pl-6">
+        <span class="eyebrow reveal-up">// 03 Coaching</span>
+        <h2 class="display-h2 reveal-up reveal-d-1">Programming yang <span class="hl">menulis riwayat,</span> bukan repetisi.</h2>
+        <p class="prose-mute mt-7 reveal-up reveal-d-2">Setiap atlet di Forge bekerja dengan satu strength coach yang menjadi <em>main accountability partner</em>. Programming bukan generic template — ditulis ulang setiap empat minggu mengikuti data testing.</p>
+
+        <ul class="coach-creds reveal-up reveal-d-3">
+          <li><span class="num">01</span><span>14 strength coach senior · NSCA &amp; USAW certified</span></li>
+          <li><span class="num">02</span><span>Programming basis · velocity &amp; load tracking</span></li>
+          <li><span class="num">03</span><span>Bulan ke-4 · re-test untuk update protokol</span></li>
+          <li><span class="num">04</span><span>Konsultasi gratis · 45 menit dengan coach senior</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- HASIL / METRICS -->
+  <section id="hasil" class="metrics py-28 md:py-36 bg-bone text-ink">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="text-center mb-16">
+        <span class="eyebrow reveal-up">// 04 Track Record</span>
+        <h2 class="display-h2 mt-3 reveal-up reveal-d-1">Hasil yang <span class="hl">terukur</span>.</h2>
+      </div>
+      <div class="metric-grid">
+        <div class="metric reveal-up"><strong class="counter" data-target="2840">0</strong><span class="lbl">Anggota aktif</span><em>5 tahun terakhir</em></div>
+        <div class="metric reveal-up reveal-d-1"><strong class="counter" data-target="186" data-suffix="kg">0</strong><span class="lbl">Median deadlift PR</span><em>Pro track · 12 bulan</em></div>
+        <div class="metric reveal-up reveal-d-2"><strong class="counter" data-target="42" data-suffix="%">0</strong><span class="lbl">Body fat reduction</span><em>Median · Elite track</em></div>
+        <div class="metric reveal-up reveal-d-3"><strong class="counter" data-target="92" data-suffix="%">0</strong><span class="lbl">Retention 12 bulan</span><em>Industry: 35%</em></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="quote-banner relative overflow-hidden h-[80vh] flex items-center justify-center">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="" class="parallax-bg" data-speed="0.18">
+    <div class="absolute inset-0 quote-banner-overlay"></div>
+    <blockquote class="relative z-10 text-center px-8 max-w-4xl reveal-up">
+      <span class="quote-mark">/ /</span>
+      <p class="quote-text">Forge tidak menjual janji. Mereka membantu saya mencapai 200kg deadlift dengan disiplin programming yang konsisten.</p>
+      <footer class="quote-by">— Bramantyo Aji · Pro Track · 18 bulan</footer>
+    </blockquote>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="tests py-28 md:py-36 px-6 md:px-12 lg:px-16">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="eyebrow reveal-up">// 05 Suara member</span>
+        <h2 class="display-h2 mt-3 reveal-up reveal-d-1">Cerita dari <span class="hl">lantai gym</span>.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <figure class="test-card reveal-up reveal-d-1"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>"Coach Forge menulis programming yang membantu saya kembali kompetitif setelah cedera. Setiap minggu data tracking saya jelas dan dapat diaudit."</blockquote><figcaption><span class="test-name">Larissa Devanya</span><span class="test-role">Pro · 2 tahun</span></figcaption></figure>
+        <figure class="test-card reveal-up reveal-d-2"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>"Saya mencoba banyak gym premium di Jakarta. Forge satu-satunya yang programming-nya bukan template — ditulis untuk saya."</blockquote><figcaption><span class="test-name">Andrew Wirjawan</span><span class="test-role">Elite · 14 bulan</span></figcaption></figure>
+        <figure class="test-card reveal-up reveal-d-3"><div class="test-stars">★ ★ ★ ★ ★</div><blockquote>"Sebagai eksekutif yang travel sering, programming Forge tetap konsisten. Coach saya memastikan saya tidak kehilangan tracking saat keluar kota."</blockquote><figcaption><span class="test-name">Diana Pratiwi</span><span class="test-role">Elite · 3 tahun</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIAL CTA -->
+  <section id="trial" class="trial relative overflow-hidden py-28 md:py-36 px-6 md:px-12">
+    <div class="trial-grid relative z-10 max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <span class="eyebrow light reveal-up">// 06 Free trial</span>
+        <h2 class="display-h2 light reveal-up reveal-d-1">Klaim <span class="hl">satu sesi gratis</span><br>dengan coach senior.</h2>
+        <p class="prose-mute light max-w-md mt-7 reveal-up reveal-d-2">45 menit konsultasi + 1 sesi training. Tidak ada kontrak, tidak ada hard sell. Mulai hari ini, evaluasi minggu depan.</p>
+        <div class="hero-actions mt-9 reveal-up reveal-d-3">
+          <a href="https://wa.me/6281234567890?text=Halo%20Forge%2C%20saya%20mau%20klaim%20free%20trial" class="btn-volt"><span>Klaim Free Trial</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.4"/></svg></a>
+          <a href="tel:+62215099188" class="btn-ghost light">+62 21 5099 1889</a>
+        </div>
+      </div>
+      <aside class="lg:col-span-5 trial-card reveal-up reveal-d-2">
+        <span class="trial-card-head">Forge Athletic Club · Kuningan</span>
+        <dl>
+          <div><dt>Lokasi</dt><dd>Wisma Forge · Lt. 6 · Kuningan</dd></div>
+          <div><dt>Operasional</dt><dd>24 / 7 · Akses kartu</dd></div>
+          <div><dt>Free trial slot</dt><dd>Senin – Jumat · 06.00 – 21.00</dd></div>
+          <div><dt>Free trial waktu</dt><dd>45 menit konsultasi + 1 sesi</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot bg-black text-white pt-24 pb-12 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-14 mb-16">
+      <div class="md:col-span-5">
+        <a href="#" class="logo flex items-center gap-3 mb-7">
+          <span class="logo-mark">F</span>
+          <span class="logo-name">Forge<small>Athletic Club · 24/7</small></span>
+        </a>
+        <p class="prose-mute light max-w-sm">Newsletter performance — coaching note, programming refresh, dan transformasi member yang dipublikasikan dengan izin.</p>
+        <form class="news-form mt-7" data-newsletter>
+          <input type="email" required placeholder="Alamat email">
+          <button type="submit"><span>Subscribe</span></button>
+        </form>
+      </div>
+      <div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+        <div><h4 class="foot-h">Programming</h4><ul class="foot-l"><li><a href="#program">Core</a></li><li><a href="#program">Pro</a></li><li><a href="#program">Elite</a></li></ul></div>
+        <div><h4 class="foot-h">Klub</h4><ul class="foot-l"><li><a href="#facility">Fasilitas</a></li><li><a href="#coach">Tim Coach</a></li><li><a href="#hasil">Track Record</a></li></ul></div>
+        <div><h4 class="foot-h">Kontak</h4><ul class="foot-l"><li><a href="https://wa.me/6281234567890">WhatsApp</a></li><li><a href="mailto:floor@forge.id">Email</a></li><li><a href="tel:+62215099188">Telepon</a></li></ul></div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-7 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] tracking-[0.32em] uppercase font-mono text-white/45">
+      <span>© <span data-year>2026</span> Forge Athletic Club</span>
+      <span>Estd. 2018 · Kuningan · 7 zona · 24/7</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
