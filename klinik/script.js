@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       ticking = true;
     };
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
