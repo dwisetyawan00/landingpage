@@ -1,277 +1,445 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solé Botanique — Botanical Skincare Apothecary</title>
-  <meta name="description" content="Solé Botanique — botanical skincare apothecary, dirumuskan dengan bahan tanaman aktif berkonsentrasi tinggi untuk kulit sensitif.">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière Botanique — Skincare Botani Premium</title>
+<meta name="description" content="Lumière Botanique adalah laboratorium skincare botani independen — formulasi tenang, bahan jujur, dan ritual pagi-malam yang dirancang seperti sajadah harian.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Caveat:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
+<body>
 
-  <nav id="navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-700 px-8 md:px-14 py-7 flex items-center justify-between text-ink">
-    <a href="#" class="logo flex items-center gap-3">
-      <span class="logo-mark">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="0.5"/>
-          <path d="M16 6c4 4 4 12 0 20M16 6c-4 4-4 12 0 20M6 16c4-4 12-4 20 0M6 16c4 4 12 4 20 0" stroke="currentColor" stroke-width="0.5"/>
-        </svg>
-      </span>
-      <span class="logo-name">Solé <em>Botanique</em><small>Apothecary · MMXIX</small></span>
-    </a>
-    <div class="hidden md:flex space-x-9 text-[11px] tracking-[0.32em] uppercase">
-      <a href="#produk" class="nav-link">Produk</a>
-      <a href="#ingredient" class="nav-link">Ingredient</a>
-      <a href="#routine" class="nav-link">Routine</a>
-      <a href="#diary" class="nav-link">Diary Klien</a>
-      <a href="#shop" class="nav-link">Konsultasi</a>
-    </div>
-    <a href="#shop" class="hidden md:inline-flex nav-cta items-center gap-2 text-[11px] tracking-[0.32em] uppercase">
-      Konsultasi Privat
-    </a>
-  </nav>
+<!-- NAV -->
+<nav id="navbar" class="fixed inset-x-0 top-0 z-50 px-6 md:px-12 py-7 flex justify-between items-center">
+  <a href="#" class="flex items-center gap-3">
+    <span class="logo-mark">L</span>
+    <span class="logo-name">Lumière Botanique<small>laboratorium kulit</small></span>
+  </a>
+  <div class="hidden md:flex space-x-9 text-[12px]">
+    <a href="#filosofi" class="nav-link">Filosofi</a>
+    <a href="#bahan" class="nav-link">Bahan</a>
+    <a href="#produk" class="nav-link">Produk</a>
+    <a href="#ritual" class="nav-link">Ritual</a>
+    <a href="#testi" class="nav-link">Testimoni</a>
+  </div>
+  <a class="nav-cta" href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%20Botanique%2C%20saya%20ingin%20konsultasi%20kulit.">Konsultasi Kulit</a>
+</nav>
 
-  <!-- HERO -->
-  <header class="hero relative min-h-screen overflow-hidden">
-    <div class="hero-shapes">
-      <span class="shape sh1"></span>
-      <span class="shape sh2"></span>
-      <span class="shape sh3"></span>
-    </div>
+<!-- HERO -->
+<header class="hero">
+  <span class="hero-blob b1"></span>
+  <span class="hero-blob b2"></span>
+  <span class="hero-blob b3"></span>
 
-    <div class="hero-grid relative grid lg:grid-cols-12 gap-10 px-8 md:px-14 lg:px-20 pt-32 pb-24 min-h-screen items-center">
-      <div class="lg:col-span-6 z-10">
-        <span class="hero-tag reveal-up">Botanical Skincare · Apothecary No. 19</span>
-        <h1 class="hero-title reveal-up reveal-d-1">
-          Kulit yang<br>
-          <em>memilih</em><br>
-          dengan tenang.
-        </h1>
-        <p class="hero-sub reveal-up reveal-d-2">
-          Formulasi botanikal terkonsentrasi yang dibuat dalam batch kecil. Dirumuskan oleh formulator senior dengan kalibrasi kulit Asia, ramah kulit sensitif, dan bebas pewangi sintetik.
-        </p>
-        <div class="hero-actions reveal-up reveal-d-3">
-          <a href="#produk" class="btn-bottle"><span>Jelajahi Produk</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg></a>
-          <a href="#routine" class="btn-stem">Skin Quiz</a>
-        </div>
-
-        <div class="hero-meta reveal-up reveal-d-4">
-          <div><strong>21</strong><span>bahan tanaman aktif</span></div>
-          <div><strong>0%</strong><span>pewangi sintetik</span></div>
-          <div><strong>96%</strong><span>klien lanjut routine 2</span></div>
-        </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag reveal-up"><span class="hero-tag-dot"></span> 92<span style="opacity:.7;">%</span> bahan organic certified</div>
+      <span class="hero-script reveal-up reveal-d-1">tumbuh dari kebun, bukan dari iklan —</span>
+      <h1 class="hero-title reveal-up reveal-d-1">
+        Kulit yang<br>
+        <em>tenang</em>, hari yang<br>
+        <span class="underline-mint">ringan</span>.
+      </h1>
+      <p class="hero-sub reveal-up reveal-d-2">
+        Lumière Botanique adalah laboratorium skincare botani independen di Bandung. Kami merancang formulasi pagi &amp; malam yang lembut — tidak menjanjikan transformasi 7 hari, tapi merawat kulit Anda untuk dekade depan.
+      </p>
+      <div class="hero-actions reveal-up reveal-d-3">
+        <a href="#produk" class="btn-chubby">
+          <span>Lihat Koleksi</span>
+          <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%20Botanique%2C%20saya%20ingin%20konsultasi%20kulit." class="btn-chubby-out">Konsultasi Kulit Gratis</a>
       </div>
 
-      <div class="lg:col-span-6 hero-stage relative reveal-image">
-        <div class="bottle-shadow"></div>
-        <img class="bottle bottle-main" src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sole Botanique bottle">
-        <div class="bottle-card">
-          <span class="bottle-card-no">№ 02 / Routine</span>
-          <strong>Vetiver &amp; Squalane Serum</strong>
-          <em>30ml · Dirumuskan untuk kulit reaktif</em>
-          <span class="bottle-card-price">Rp 480.000</span>
-        </div>
-        <div class="bottle-leaf">
-          <svg width="80" height="120" viewBox="0 0 80 120" fill="none"><path d="M40 5C25 25 25 65 40 115M40 5C55 25 55 65 40 115M40 5C30 25 25 55 40 80M40 5C50 25 55 55 40 80" stroke="currentColor" stroke-width="0.8"/></svg>
-        </div>
-      </div>
+      <dl class="hero-meta reveal-up reveal-d-4">
+        <div><dt>11k+</dt><dd>Pelanggan</dd></div>
+        <div><dt>9</dt><dd>Tahun Kebun</dd></div>
+        <div><dt>4.9</dt><dd>Rating</dd></div>
+      </dl>
     </div>
 
-    <!-- soft press strip -->
-    <div class="press-strip">
-      <span class="press-tag">As featured in</span>
-      <div class="press-marquee">
-        <span>VOGUE INDONESIA</span><span>·</span>
-        <span>HARPER'S BAZAAR</span><span>·</span>
-        <span>ELLE</span><span>·</span>
-        <span>FEMINA</span><span>·</span>
-        <span>CLEO</span><span>·</span>
-        <span>MARIAN</span><span>·</span>
-        <span>VOGUE INDONESIA</span><span>·</span>
-        <span>HARPER'S BAZAAR</span><span>·</span>
-        <span>ELLE</span><span>·</span>
-        <span>FEMINA</span><span>·</span>
+    <div class="bottle-stage reveal-image">
+      <span class="bottle-circle-bg"></span>
+
+      <span class="bottle-pill-tag t1"><span class="bottle-pill-tag-dot"></span> Bakuchiol 1%</span>
+      <span class="bottle-pill-tag t2"><span class="bottle-pill-tag-dot"></span> pH-balanced 5.4</span>
+
+      <svg class="bottle-leaf l1" viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 5 C 70 20, 90 40, 50 95 C 10 40, 30 20, 50 5 Z M50 25 L50 80" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.85"/>
+      </svg>
+      <svg class="bottle-leaf l2" viewBox="0 0 100 100" fill="currentColor">
+        <path d="M50 5 C 70 20, 90 40, 50 95 C 10 40, 30 20, 50 5 Z M50 25 L50 80" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.7"/>
+      </svg>
+
+      <svg class="bottle-svg" viewBox="0 0 200 360" xmlns="http://www.w3.org/2000/svg">
+        <!-- cap -->
+        <rect x="78" y="0" width="44" height="38" rx="6" fill="#5D3B6A"/>
+        <rect x="74" y="34" width="52" height="14" rx="2" fill="#3D2348"/>
+        <!-- neck -->
+        <rect x="84" y="48" width="32" height="22" fill="#74C9AB"/>
+        <!-- body -->
+        <path d="M40 70 Q40 78 50 80 L150 80 Q160 78 160 70 L160 320 Q160 348 130 350 L70 350 Q40 348 40 320 Z" fill="#A2E3CD"/>
+        <!-- highlights -->
+        <path d="M55 100 L55 320" stroke="#FAF6EE" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+        <path d="M70 100 L70 220" stroke="#FAF6EE" stroke-width="3" stroke-linecap="round" opacity="0.35"/>
+        <!-- label -->
+        <rect x="55" y="155" width="90" height="100" fill="#FFFCF5"/>
+        <text x="100" y="190" text-anchor="middle" font-family="DM Serif Display, serif" font-size="18" fill="#5D3B6A">Lumière</text>
+        <text x="100" y="210" text-anchor="middle" font-family="Caveat, cursive" font-size="14" fill="#8758A0">botanique</text>
+        <line x1="68" y1="220" x2="132" y2="220" stroke="#5D3B6A" stroke-width="0.7"/>
+        <text x="100" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="#5D3B6A">SERUM · 30 ML</text>
+        <text x="100" y="246" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" letter-spacing="1" fill="#8758A0">Bakuchiol · Niacinamide</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- PRESS MARQUEE -->
+<section class="press">
+  <div class="press-tape">
+    <span>Vogue Indonesia</span><span>Femina</span><span>Harper's Bazaar</span><span>Kompas Lifestyle</span><span>Female Daily</span><span>Beauty Journal</span>
+    <span>Vogue Indonesia</span><span>Femina</span><span>Harper's Bazaar</span><span>Kompas Lifestyle</span><span>Female Daily</span><span>Beauty Journal</span>
+  </div>
+</section>
+
+<!-- INGREDIENTS -->
+<section id="bahan" class="ingredients">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="eyebrow reveal-up">apa yang kami pilih,</span>
+      <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:6px;">Bahan yang kami<br><em>tanam</em>, kami <strong>kenali</strong>.</h2>
+    </div>
+    <div class="ing-grid">
+      <article class="ing-card c1 reveal-up reveal-d-1">
+        <span class="ing-no">№ 01</span>
+        <h3>Bakuchiol</h3>
+        <p>Alternatif retinol botani dari biji Babchi. Lembut untuk kulit sensitif, tetap aktif.</p>
+        <span class="ing-card-chip">Anti-aging · Botani</span>
+      </article>
+      <article class="ing-card c2 reveal-up reveal-d-2">
+        <span class="ing-no">№ 02</span>
+        <h3>Niacinamide</h3>
+        <p>Vitamin B3 yang mengecilkan pori &amp; meratakan tekstur. Sahabat kulit berminyak.</p>
+        <span class="ing-card-chip">Pori · Brightening</span>
+      </article>
+      <article class="ing-card c3 reveal-up reveal-d-3">
+        <span class="ing-no">№ 03</span>
+        <h3>Centella Asiatica</h3>
+        <p>Pegagan yang menenangkan, memperbaiki barrier &amp; mengurangi kemerahan.</p>
+        <span class="ing-card-chip">Sensitif · Healing</span>
+      </article>
+      <article class="ing-card c4 reveal-up reveal-d-4">
+        <span class="ing-no">№ 04</span>
+        <h3>Squalane Olive</h3>
+        <p>Pelembap ringan dari minyak zaitun. Tidak menyumbat, meresap dalam menit.</p>
+        <span class="ing-card-chip">Hidrasi · Non-comedogenic</span>
+      </article>
+      <article class="ing-card c5 reveal-up reveal-d-1">
+        <span class="ing-no">№ 05</span>
+        <h3>Snail Secretion</h3>
+        <p>Filtrate siput segar untuk regenerasi kulit dan elastisitas yang dewasa.</p>
+        <span class="ing-card-chip">Regenerasi · Premium</span>
+      </article>
+      <article class="ing-card c6 reveal-up reveal-d-2">
+        <span class="ing-no">№ 06</span>
+        <h3>Hyaluronic Acid</h3>
+        <p>Hidrasi mendalam yang mengikat kelembapan kulit hingga 1.000 kali bobotnya.</p>
+        <span class="ing-card-chip">Hidrasi · Plumping</span>
+      </article>
+      <article class="ing-card c7 reveal-up reveal-d-3">
+        <span class="ing-no">№ 07</span>
+        <h3>Kojic Acid</h3>
+        <p>Pencerah dari fermentasi sake yang memudarkan flek tanpa iritasi.</p>
+        <span class="ing-card-chip">Brightening · Spot</span>
+      </article>
+      <article class="ing-card c8 reveal-up reveal-d-4">
+        <span class="ing-no">№ 08</span>
+        <h3>Camellia Oil</h3>
+        <p>Minyak teh hijau dari Jepang. Antioksidan untuk paparan polusi harian.</p>
+        <span class="ing-card-chip">Antioksidan · Glow</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="produk" class="products">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16">
+      <div class="lg:col-span-7">
+        <span class="eyebrow reveal-up">koleksi rumah —</span>
+        <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:6px;">Enam botol untuk<br><em>ritual</em> kulit Anda.</h2>
+      </div>
+      <div class="lg:col-span-5">
+        <p class="prose-soft reveal-up reveal-d-2" style="margin-bottom:0;">Setiap produk diformulasikan dalam batch kecil di laboratorium kebun kami di Lembang. Bukan diproduksi massal, tidak juga mass-marketed.</p>
       </div>
     </div>
-  </header>
 
-  <!-- PRODUCT GRID -->
-  <section id="produk" class="products py-32 md:py-40 px-8 md:px-14 lg:px-20">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <span class="ornament center reveal-up"><span class="orn-line"></span><span class="orn-mark">&#10047;</span><span class="orn-line"></span></span>
-        <span class="eyebrow reveal-up reveal-d-1">Apothecary Collection</span>
-        <h2 class="display-h2 mt-3 reveal-up reveal-d-2">Empat <em>kalibrasi</em> untuk kulit Anda.</h2>
-      </div>
-
-      <div class="prod-grid">
-        <article class="prod-card reveal-up reveal-d-1">
-          <span class="prod-no">№ 01</span>
-          <div class="prod-img" style="background-image:url('https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
-          <h3 class="prod-name">Camomille Cleansing Milk</h3>
-          <p class="prod-tag">Cleanser · 200ml</p>
-          <p class="prod-desc">Pembersih lembut dengan ekstrak camomile dan calendula untuk kulit reaktif dan eczema.</p>
-          <div class="prod-foot"><span class="prod-price">Rp 320.000</span><a href="#shop" class="prod-cta">Shop →</a></div>
-        </article>
-        <article class="prod-card reveal-up reveal-d-2">
-          <span class="prod-no">№ 02</span>
-          <div class="prod-img" style="background-image:url('https://images.unsplash.com/photo-1611080541599-8c6dbde6ed28?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
-          <h3 class="prod-name">Vetiver &amp; Squalane Serum</h3>
-          <p class="prod-tag">Serum · 30ml</p>
-          <p class="prod-desc">Serum hidrasi-barrier dengan vetiver, squalane, dan beta-glucan untuk kulit sensitif &amp; barrier lemah.</p>
-          <div class="prod-foot"><span class="prod-price">Rp 480.000</span><a href="#shop" class="prod-cta">Shop →</a></div>
-        </article>
-        <article class="prod-card reveal-up reveal-d-3">
-          <span class="prod-no">№ 03</span>
-          <div class="prod-img" style="background-image:url('https://images.unsplash.com/photo-1612817288484-6f916006741a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
-          <h3 class="prod-name">Rose Hydration Cream</h3>
-          <p class="prod-tag">Moisturizer · 50g</p>
-          <p class="prod-desc">Pelembap dengan minyak rosehip dan ceramide untuk kulit kering, kombinasi, dan dewasa.</p>
-          <div class="prod-foot"><span class="prod-price">Rp 540.000</span><a href="#shop" class="prod-cta">Shop →</a></div>
-        </article>
-        <article class="prod-card reveal-up reveal-d-4">
-          <span class="prod-no">№ 04</span>
-          <div class="prod-img" style="background-image:url('https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');"></div>
-          <h3 class="prod-name">Mineral Veil SPF 50</h3>
-          <p class="prod-tag">Sunscreen · 40ml</p>
-          <p class="prod-desc">Tabir surya mineral dengan zinc oxide dan teh hijau, hasil halus &amp; tidak beraroma sintetik.</p>
-          <div class="prod-foot"><span class="prod-price">Rp 380.000</span><a href="#shop" class="prod-cta">Shop →</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- INGREDIENT STORY -->
-  <section id="ingredient" class="ingredient py-32 md:py-40 bg-sage text-cream">
-    <div class="max-w-7xl mx-auto px-8 md:px-14 grid lg:grid-cols-12 gap-16 items-center">
-      <div class="lg:col-span-5 reveal-image">
-        <div class="ingredient-img">
-          <img src="https://images.unsplash.com/photo-1597248374161-426f3d6a1c0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Botanical">
-        </div>
-      </div>
-      <div class="lg:col-span-7 lg:pl-8">
-        <span class="eyebrow light reveal-up">Ingredient Diary</span>
-        <h2 class="display-h2 light reveal-up reveal-d-1">Bahan yang dapat <em>kami panggil</em> namanya.</h2>
-        <p class="prose-soft light mt-7 max-w-xl reveal-up reveal-d-2">Kami tidak menggunakan istilah dagang yang menyembunyikan bahan dasar. Setiap formula tersusun dari bahan tanaman dengan asal yang dapat ditelusuri — dipanen di Bali, Jawa Barat, dan Lembang.</p>
-
-        <ul class="ing-list reveal-up reveal-d-3">
-          <li><span class="ing-no">a.</span><div><h4>Centella Asiatica</h4><p>Pegagan dari Bandung Selatan. Penenang barrier &amp; pemulih kemerahan.</p></div></li>
-          <li><span class="ing-no">b.</span><div><h4>Rosehip Oil</h4><p>Diperas dingin dari biji rosa canina. Sumber vitamin A &amp; antioksidan halus.</p></div></li>
-          <li><span class="ing-no">c.</span><div><h4>Niacinamide 5%</h4><p>Konsentrasi rendah-aman untuk kulit Asia. Mencerahkan &amp; mengontrol sebum.</p></div></li>
-          <li><span class="ing-no">d.</span><div><h4>Beta-Glucan</h4><p>Diisolasi dari oat. Penenang kulit setelah laser, post-treatment, atau iritasi.</p></div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROUTINE BUILDER -->
-  <section id="routine" class="routine py-32 md:py-40 px-8 md:px-14">
-    <div class="max-w-5xl mx-auto text-center">
-      <span class="ornament center reveal-up"><span class="orn-line"></span><span class="orn-mark">&#10047;</span><span class="orn-line"></span></span>
-      <span class="eyebrow reveal-up reveal-d-1">Skin Quiz</span>
-      <h2 class="display-h2 mt-3 reveal-up reveal-d-2">Routine yang dirumuskan <em>untuk kulit Anda</em>.</h2>
-      <p class="prose-soft mt-6 max-w-xl mx-auto reveal-up reveal-d-3">5 menit kuesioner — diakhiri dengan rekomendasi rangkaian dari formulator senior kami. Tidak ada algoritma; ditinjau langsung oleh tim apothecary.</p>
-
-      <ol class="step-list">
-        <li class="step reveal-up reveal-d-1"><span class="step-no">01</span><h3>Kuesioner</h3><p>Tipe kulit, kondisi reaktif, alergi, dan tujuan jangka pendek.</p></li>
-        <li class="step reveal-up reveal-d-2"><span class="step-no">02</span><h3>Tinjauan formulator</h3><p>Setiap jawaban ditinjau langsung oleh apoteker senior kami.</p></li>
-        <li class="step reveal-up reveal-d-3"><span class="step-no">03</span><h3>Routine kustom</h3><p>Rekomendasi 3 – 5 produk + cara pakai dikirim via WhatsApp.</p></li>
-      </ol>
-
-      <a href="https://wa.me/6281234567890?text=Halo%20Sole%2C%20saya%20mau%20mulai%20Skin%20Quiz" class="btn-bottle mt-12 reveal-up reveal-d-4">
-        <span>Mulai Skin Quiz</span>
-        <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg>
-      </a>
-    </div>
-  </section>
-
-  <!-- DIARY / TESTIMONIALS -->
-  <section id="diary" class="diary py-32 md:py-40 bg-cream">
-    <div class="max-w-7xl mx-auto px-8 md:px-14">
-      <div class="grid lg:grid-cols-12 gap-12 items-end mb-16">
-        <div class="lg:col-span-7">
-          <span class="eyebrow reveal-up">Diary Klien</span>
-          <h2 class="display-h2 reveal-up reveal-d-1">Cerita kulit, <em>bukan kemasan</em>.</h2>
-        </div>
-        <p class="lg:col-span-5 prose-soft reveal-up reveal-d-2">Kami mempublikasikan diary klien dengan persetujuan. Hasil dapat berbeda; routine adalah perjalanan, bukan transaksi sekali pakai.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <figure class="diary-card reveal-up reveal-d-1">
-          <div class="diary-img" style="background-image:url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-          <blockquote>"Setelah 60 hari, kulit reaktif saya tidak lagi merah setiap pagi. Routine sederhana dengan 3 produk."</blockquote>
-          <figcaption><span>Pradnya · 31</span><em>Vetiver Routine · 60 hari</em></figcaption>
-        </figure>
-        <figure class="diary-card reveal-up reveal-d-2">
-          <div class="diary-img" style="background-image:url('https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-          <blockquote>"Saya tidak lagi membeli serum 3 botol per bulan. Solé membuat saya lebih sederhana &amp; konsisten."</blockquote>
-          <figcaption><span>Larissa · 28</span><em>Camomile + Rose · 90 hari</em></figcaption>
-        </figure>
-        <figure class="diary-card reveal-up reveal-d-3">
-          <div class="diary-img" style="background-image:url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80')"></div>
-          <blockquote>"Sebagai dokter, saya menghargai kalibrasi mereka. Konsentrasi aktif rendah-aman, tetapi efektif."</blockquote>
-          <figcaption><span>dr. Aulia · 38</span><em>Niacinamide Routine · 4 bulan</em></figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section id="shop" class="cta py-32 md:py-40 px-8 md:px-14">
-    <div class="max-w-5xl mx-auto cta-card relative">
-      <div class="cta-grid relative grid lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-7">
-          <span class="ornament reveal-up"><span class="orn-line"></span><span class="orn-mark">&#10047;</span><span class="orn-line"></span></span>
-          <span class="eyebrow reveal-up reveal-d-1">Konsultasi Apothecary</span>
-          <h2 class="display-h2 mt-3 reveal-up reveal-d-2">Mulai routine <em>dengan tenang</em>.</h2>
-          <p class="prose-soft mt-6 max-w-md reveal-up reveal-d-3">Tim apothecary kami akan membantu memilih produk yang tepat — tanpa hard sell. Konsultasi privat melalui WhatsApp.</p>
-          <div class="hero-actions mt-8 reveal-up reveal-d-4">
-            <a href="https://wa.me/6281234567890?text=Halo%20Sole%2C%20saya%20mau%20konsultasi%20produk" class="btn-bottle"><span>Konsultasi via WhatsApp</span><svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="1.2"/></svg></a>
-            <a href="mailto:apothecary@solebotanique.id" class="btn-stem">Email Apothecary</a>
+    <div class="prod-grid">
+      <article class="prod-card reveal-up reveal-d-1">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Bakuchiol Renewal Serum"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Serum Malam</span>
+          <h4>Bakuchiol Renewal Serum</h4>
+          <p>Alternatif retinol botani 1% — dipakai malam hari, lembut untuk pemula.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 380.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20Bakuchiol%20Renewal%20Serum." class="prod-link">Order →</a>
           </div>
         </div>
-        <aside class="lg:col-span-5 cta-bottle">
-          <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Bottle" class="bottle-float">
-        </aside>
-      </div>
-    </div>
-  </section>
+      </article>
 
-  <!-- FOOTER -->
-  <footer class="foot py-20 px-8 md:px-14">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-14 mb-16">
-      <div class="md:col-span-5">
-        <a href="#" class="logo flex items-center gap-3 mb-7">
-          <span class="logo-mark">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="0.5"/>
-              <path d="M16 6c4 4 4 12 0 20M16 6c-4 4-4 12 0 20M6 16c4-4 12-4 20 0M6 16c4 4 12 4 20 0" stroke="currentColor" stroke-width="0.5"/>
-            </svg>
-          </span>
-          <span class="logo-name">Solé <em>Botanique</em><small>Apothecary · MMXIX</small></span>
-        </a>
-        <p class="prose-soft max-w-sm">Newsletter apothecary — refleksi formulator, panen musiman, dan pre-launch produk untuk member.</p>
-        <form class="news-form mt-7" data-newsletter>
-          <input type="email" required placeholder="Alamat email Anda">
-          <button type="submit"><span>Berlangganan</span></button>
-        </form>
-      </div>
-      <div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
-        <div><h4 class="foot-h">Apothecary</h4><ul class="foot-l"><li><a href="#produk">Produk</a></li><li><a href="#ingredient">Ingredient</a></li><li><a href="#routine">Skin Quiz</a></li></ul></div>
-        <div><h4 class="foot-h">Bantuan</h4><ul class="foot-l"><li><a href="#diary">Diary Klien</a></li><li><a href="#shop">Konsultasi</a></li><li><a href="#shop">Pengembalian</a></li></ul></div>
-        <div><h4 class="foot-h">Kontak</h4><ul class="foot-l"><li><a href="https://wa.me/6281234567890">WhatsApp</a></li><li><a href="mailto:apothecary@solebotanique.id">Email</a></li><li><a href="tel:+622150991882">Telepon</a></li></ul></div>
-      </div>
-    </div>
-    <div class="max-w-7xl mx-auto pt-8 border-t border-sage/30 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-[11px] tracking-[0.32em] uppercase text-stone-500">
-      <span>© <span data-year>2026</span> Solé Botanique</span>
-      <span>Apothecary · MMXIX · Bandung · Bali</span>
-    </div>
-  </footer>
+      <article class="prod-card offset reveal-up reveal-d-2">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Centella Calm Toner"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Toner Pagi</span>
+          <h4>Centella Calm Toner</h4>
+          <p>Toner pegagan untuk kulit reaktif &amp; pasca-perawatan klinik.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 245.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20Centella%20Calm%20Toner." class="prod-link">Order →</a>
+          </div>
+        </div>
+      </article>
 
-  <script src="script.js"></script>
+      <article class="prod-card reveal-up reveal-d-3">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Niacinamide Smooth Essence"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Essence</span>
+          <h4>Niacinamide Smooth Essence</h4>
+          <p>Pori, tekstur, &amp; warna kulit yang lebih merata dalam 4 minggu.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 320.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20Niacinamide%20Essence." class="prod-link">Order →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card offset reveal-up reveal-d-1">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Squalane Daily Moisturizer"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Moisturizer</span>
+          <h4>Squalane Daily Moisturizer</h4>
+          <p>Pelembap ringan dari zaitun. Cocok untuk kulit kombinasi-berminyak.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 295.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20Squalane%20Moisturizer." class="prod-link">Order →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal-up reveal-d-2">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Camellia Glow Oil"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Face Oil</span>
+          <h4>Camellia Glow Oil</h4>
+          <p>Minyak teh hijau dingin-pres untuk kilau alami pagi/malam.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 410.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20Camellia%20Glow%20Oil." class="prod-link">Order →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="prod-card offset reveal-up reveal-d-3">
+        <div class="prod-img-wrap"><img src="https://images.unsplash.com/photo-1570194065593-44c9b9d27e2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="HA Hydra Mist"></div>
+        <div class="prod-meta">
+          <span class="prod-cat">Face Mist</span>
+          <h4>HA Hydra Mist</h4>
+          <p>Mist hyaluronic untuk hidrasi cepat di tengah hari.</p>
+          <div class="prod-meta-foot">
+            <span class="prod-price">Rp 220.000</span>
+            <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20mau%20order%20HA%20Hydra%20Mist." class="prod-link">Order →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RITUAL -->
+<section id="ritual" class="ritual">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7">
+        <span class="eyebrow reveal-up" style="color:var(--plum-deep);">ritual harian —</span>
+        <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:6px;">Tiga langkah <em>tenang</em><br>setiap pagi &amp; malam.</h2>
+      </div>
+      <div class="lg:col-span-5">
+        <p class="prose-soft reveal-up reveal-d-2">Tidak perlu sepuluh produk. Mulai dari tiga langkah, dengan formulasi lembut yang bisa dipercaya kulit Anda.</p>
+      </div>
+    </div>
+
+    <div class="rit-grid">
+      <article class="rit-step reveal-up reveal-d-1">
+        <span class="rit-num">i.</span>
+        <h4>Bersihkan</h4>
+        <p>Cuci wajah dengan pH 5.4 cleanser. Tidak menarik minyak alami kulit, hanya membersihkan polusi hari ini.</p>
+      </article>
+      <article class="rit-step reveal-up reveal-d-2">
+        <span class="rit-num">ii.</span>
+        <h4>Targetkan</h4>
+        <p>Pilih satu serum aktif (bakuchiol malam, niacinamide pagi). Berikan 5 menit untuk kulit menyerap.</p>
+      </article>
+      <article class="rit-step reveal-up reveal-d-3">
+        <span class="rit-num">iii.</span>
+        <h4>Lindungi</h4>
+        <p>Squalane di pagi hari, oil di malam hari. Tutupi dengan SPF saat keluar — tidak perlu negosiasi.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testi" class="tests">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-16">
+      <span class="eyebrow reveal-up">apa yang dikatakan kulit kami,</span>
+      <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:6px;">11.400 cerita yang<br>tersimpan di <em>cermin</em>.</h2>
+    </div>
+    <div class="test-grid">
+      <figure class="test-card reveal-up reveal-d-1">
+        <span class="test-mark">"</span>
+        <span class="test-stars">★ ★ ★ ★ ★</span>
+        <blockquote>Saya pernah pakai retinol klinik, kulit terasa diserang. Bakuchiol Lumière baru bekerja di minggu ke-6, tapi tanpa kemerahan. Saya tidak akan pernah balik.</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-avatar" style="background:var(--lavender-deep);">A</span>
+          <div>
+            <span class="test-name">Anika Pranatadipura</span>
+            <span class="test-role">Pelanggan · 14 bulan</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="test-card reveal-up reveal-d-2">
+        <span class="test-mark">"</span>
+        <span class="test-stars">★ ★ ★ ★ ★</span>
+        <blockquote>Pertama kali saya bisa pakai serum tanpa kulit menolak. Centella tonernya yang membuat saya berani mencoba aktif lainnya satu per satu.</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-avatar" style="background:var(--mint-deep);">G</span>
+          <div>
+            <span class="test-name">Geraldine Mahendra</span>
+            <span class="test-role">Pelanggan · Sensitif Skin</span>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="test-card reveal-up reveal-d-3">
+        <span class="test-mark">"</span>
+        <span class="test-stars">★ ★ ★ ★ ★</span>
+        <blockquote>Saya berusia 47, dan saya tidak menargetkan menjadi 27. Saya hanya ingin merasa nyaman dengan kulit saya hari ini. Lumière membantu saya sampai ke sana.</blockquote>
+        <figcaption class="test-figcap">
+          <span class="test-avatar" style="background:var(--plum-light);">R</span>
+          <div>
+            <span class="test-name">Retno Wahyuningsih</span>
+            <span class="test-role">Pelanggan · 4 tahun</span>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    <div class="text-center mb-12">
+      <span class="eyebrow reveal-up">tanya jawab,</span>
+      <h2 class="display-h2 reveal-up reveal-d-1" style="margin-top:6px;">Hal yang sering<br>kami <em>diskusikan</em>.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal-up reveal-d-1" open>
+        <summary><span class="faq-q-text">Apakah produk Lumière aman untuk kulit sensitif?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Kami merancang formulasi dengan bahan minimum &amp; pH yang dijaga. 87% pelanggan kulit sensitif &amp; pasca-klinik berhasil menggunakan rangkaian Centella + Squalane kami tanpa reaksi.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-2">
+        <summary><span class="faq-q-text">Apakah ada konsultasi sebelum membeli?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Ya. Kami menyediakan konsultasi gratis 20 menit via WhatsApp dengan beauty advisor untuk menentukan rangkaian yang sesuai jenis kulit &amp; goal Anda.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-3">
+        <summary><span class="faq-q-text">Berapa lama produk bertahan setelah dibuka?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Karena kami memformulasikan dalam batch kecil tanpa pengawet sintetis berat, simpan di tempat sejuk dan habiskan dalam 6 – 9 bulan untuk kualitas optimal.</div>
+      </details>
+      <details class="faq-item reveal-up reveal-d-4">
+        <summary><span class="faq-q-text">Apakah pengiriman ke luar Jakarta &amp; Bandung?</span><span class="faq-q-toggle">+</span></summary>
+        <div class="faq-q-body">Ya, kami kirim ke seluruh Indonesia melalui kurir berpendingin. Untuk Jakarta &amp; Bandung tersedia same-day delivery.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="kontak" class="cta">
+  <div class="max-w-5xl mx-auto px-6 md:px-12 text-center">
+    <span class="cta-script reveal-up">untuk Anda yang sedang mencari —</span>
+    <h2 class="display-h2 reveal-up reveal-d-1" style="margin:18px 0 24px; color:var(--cream);">Mulailah dari satu<br>botol yang <span style="color:var(--mint);">benar</span>.</h2>
+    <p class="prose-soft reveal-up reveal-d-2" style="max-width:38rem; margin:0 auto 36px; color:rgba(235,223,245,0.85);">Konsultasi kulit 20 menit, gratis, via WhatsApp. Kami akan rekomendasikan satu produk yang paling cocok — bukan paket lima botol.</p>
+    <div class="hero-actions reveal-up reveal-d-3" style="justify-content:center;">
+      <a href="https://wa.me/6281234567890?text=Halo%20Lumi%C3%A8re%2C%20saya%20ingin%20konsultasi%20kulit%20gratis." class="btn-chubby" style="background:var(--mint); color:var(--plum-deep);">
+        <span>Konsultasi Gratis</span>
+        <svg width="14" height="9" viewBox="0 0 14 9" fill="none"><path d="M9 1l4 3.5L9 8M13 4.5H0" stroke="currentColor" stroke-width="2"/></svg>
+      </a>
+      <a href="#produk" class="btn-chubby-out" style="border-color:var(--cream); color:var(--cream);">Lihat Produk</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-5">
+      <a href="#" class="flex items-center gap-3" style="margin-bottom:24px;">
+        <span class="logo-mark">L</span>
+        <span class="logo-name" style="color:var(--cream);">Lumière Botanique<small style="color:var(--lavender);">laboratorium kulit</small></span>
+      </a>
+      <p style="max-width:24rem; font-size:14px; line-height:1.65; color:rgba(235,223,245,0.7); margin-bottom:24px;">Skincare botani independen dari Lembang, untuk kulit yang ingin dirawat — bukan ditransformasi.</p>
+      <span class="foot-h">surat pagi —</span>
+      <form class="news-form" data-newsletter>
+        <input type="email" placeholder="Email Anda" required>
+        <button type="submit">Daftar</button>
+      </form>
+    </div>
+    <div class="lg:col-span-2">
+      <h4 class="foot-h">koleksi —</h4>
+      <ul class="foot-l">
+        <li><a href="#produk">Serum</a></li>
+        <li><a href="#produk">Toner</a></li>
+        <li><a href="#produk">Moisturizer</a></li>
+        <li><a href="#produk">Face Oil</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-2">
+      <h4 class="foot-h">kebun —</h4>
+      <ul class="foot-l">
+        <li><a href="#filosofi">Filosofi</a></li>
+        <li><a href="#bahan">Bahan</a></li>
+        <li><a href="#ritual">Ritual</a></li>
+        <li><a href="#testi">Testimoni</a></li>
+      </ul>
+    </div>
+    <div class="lg:col-span-3">
+      <h4 class="foot-h">lab —</h4>
+      <address style="font-style:normal; font-size:13px; color:rgba(235,223,245,0.65); line-height:1.7;">
+        Lumière Botanique Lab<br>
+        Jl. Setiabudi No. 88<br>
+        Lembang, Bandung 40391<br><br>
+        <a href="mailto:halo@lumiere-botanique.id" style="color:var(--mint);">halo@lumiere-botanique.id</a><br>
+        <a href="tel:+622150991882" style="color:var(--mint);">+62 21 5099 1882</a>
+      </address>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8" style="border-top:1px dashed rgba(235,223,245,0.18); display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:11px; color:rgba(235,223,245,0.45);">
+    <p>© 2025 Lumière Botanique. Hak cipta dilindungi.</p>
+    <div class="flex gap-6">
+      <a href="#" style="color:rgba(235,223,245,0.6);">Instagram</a>
+      <a href="#" style="color:rgba(235,223,245,0.6);">TikTok</a>
+      <a href="#" style="color:rgba(235,223,245,0.6);">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>

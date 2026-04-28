@@ -1,76 +1,69 @@
-/* Veluria Atelier — interactions */
+/* Maharaja Couture — interactions */
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Nav scroll state
   const navbar = document.getElementById('navbar');
-  if (navbar) {
-    const update = () => {
-      if (window.scrollY > 60) navbar.classList.add('scrolled');
-      else navbar.classList.remove('scrolled');
-    };
-    update();
-    window.addEventListener('scroll', update, { passive: true });
-  }
+  const onScrollNav = () => {
+    if (window.scrollY > 60) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+  };
+  onScrollNav();
+  window.addEventListener('scroll', onScrollNav, { passive: true });
 
-  // Reveal observer
-  const reveals = document.querySelectorAll('.reveal-up, .reveal-image');
-  const io = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-revealed');
-        observer.unobserve(entry.target);
+  // reveal observer
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-revealed');
+        obs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.14, rootMargin: '0px 0px -10% 0px' });
-  reveals.forEach(el => io.observe(el));
+  }, { threshold: 0.14, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal-up, .reveal-image').forEach(el => io.observe(el));
 
-  // Parallax
-  const parallaxItems = document.querySelectorAll('.parallax-bg');
-  if (parallaxItems.length) {
+  // parallax bg — translate based on element's center distance from viewport center
+  const parallaxImgs = document.querySelectorAll('.parallax-bg');
+  if (parallaxImgs.length) {
     let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      window.requestAnimationFrame(() => {
-        const scrollY = window.scrollY;
-        parallaxItems.forEach(img => {
-          const rect = img.getBoundingClientRect();
-          if (rect.bottom < 0 || rect.top > window.innerHeight) return;
-          const speed = parseFloat(img.dataset.speed || 0.18);
-          const center = rect.top + rect.height / 2 - window.innerHeight / 2;
-          img.style.transform = `translateY(${-center * speed}px)`;
-        });
-        ticking = false;
+    const update = () => {
+      const vh = window.innerHeight;
+      parallaxImgs.forEach(img => {
+        const speed = parseFloat(img.dataset.speed || '0.15');
+        const rect = img.parentElement.getBoundingClientRect();
+        const center = rect.top + rect.height / 2;
+        const distFromCenter = center - vh / 2;
+        img.style.transform = `translateY(${-distFromCenter * speed}px)`;
       });
-      ticking = true;
+      ticking = false;
     };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    const onScrollPx = () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    };
+    update();
+    window.addEventListener('scroll', onScrollPx, { passive: true });
+    window.addEventListener('resize', update);
   }
 
-  // Year
-  const year = document.querySelector('[data-year]');
-  if (year) year.textContent = new Date().getFullYear();
+  // smooth hash anchor
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id.length <= 1) return;
+      const t = document.querySelector(id);
+      if (!t) return;
+      e.preventDefault();
+      const top = t.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
 
-  // Newsletter
+  // newsletter -> WA
   document.querySelectorAll('form[data-newsletter]').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = form.querySelector('input[type="email"]').value;
-      const msg = encodeURIComponent(`Halo Veluria, mohon daftarkan saya pada surat berkala atelier. Email: ${email}`);
+      const msg = encodeURIComponent(`Halo Maharaja Couture, mohon kirimkan surat atelier ke email: ${email}`);
       window.open(`https://wa.me/6281234567890?text=${msg}`, '_blank', 'noopener');
       form.reset();
-    });
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', (e) => {
-      const href = a.getAttribute('href');
-      if (!href || href === '#') return;
-      const tgt = document.querySelector(href);
-      if (!tgt) return;
-      e.preventDefault();
-      tgt.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 
